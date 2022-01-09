@@ -1,0 +1,82 @@
+Amazon interview:
+https://www.geeksforgeeks.org/how-to-prepare-for-amazon-software-development-engineering-interview/
+
+How to prepare:
+https://workat.tech/general/article/sde-1-interview-prep-ultimate-guide-dhijqvdubzor
+
+Design questions:
+https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca
+
+Quora suggestions:
+https://www.quora.com/How-should-I-prepare-for-my-Amazon-SDE-interview-in-2-months
+
+DO FOR TREES-II:
+Traversal,
+Zig-Zag traversal,
+Left view,
+right view,
+Reversing the tree,
+level order,
+converting to BST,
+checking whether a complete Binary tree,
+Depth, Height, Width.
+
+** DYNAMIC PROGRAMMING **
+How to learn Dynamic Programming:
+https://www.quora.com/How-do-I-learn-dynamic-programming-as-a-newbie
+
+Types of DP:
+1. 0-1 Knapsack problem (6)
+2. unbounded Knapsack problem (5)
+3. Fibonacci (7)
+4. LCS (15)
+5. LIS (10)
+6. Kadane's algorithms (6)
+7. Matrix Chain Multiplication (7)
+8. DP on Trees (4)
+9. DP on Grid (14)
+10. Others (5)
+
+VERY GOOD:
+https://igotanoffer.com/blogs/tech/amazon-software-development-engineer-interview
+Has questions, interview types and videos.
+Need to go through multiple times.
+
+Has Topics to Cover:
+https://medium.com/@rachit138/how-i-cleared-the-amazon-sde-2-interview-f82a33706ff4
+
+HAS 25 QUESTIONS FOR PRACTICE (NEED TO DO ALL):
+https://medium.com/javarevisited/top-25-amazon-sde-interview-questions-cfe0ef70ba9e
+
+Nothing new, just motivation:
+https://www.freecodecamp.org/news/software-engineering-interviews-744380f4f2af/
+
+Need to dig more interview experiences:
+https://leetcode.com/discuss/career/229125/amazon-sde-1-interview-experience-and-suggested-preparation-strategy
+https://www.geeksforgeeks.org/adobe-interview-set-16-mts-1/
+
+Design Patterns:
+https://www.youtube.com/watch?v=BWprw8UHIzA&list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f&ab_channel=WebDevSimplified
+https://www.youtube.com/watch?v=FLmBqI3IKMA&ab_channel=TraversyMedia
+
+https://www.youtube.com/watch?v=BWprw8UHIzA&list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f&ab_channel=WebDevSimplified
+Types of Design Patterns:
+1. Null Object Pattern - Design Patterns
+2. Builder Pattern - Design Patterns
+3. Singleton Pattern - Design Patterns
+4. Facade Pattern - Design Patterns
+5. Command Pattern - Design Patterns
+6. Single Responsibility Principle Explained - SOLID Design Principles
+7. Open/Closed Principle Explained - SOLID Design Principles
+8. Liskov Substitution Principle Explained - SOLID Design Principles
+9. Interface Segregation Principle Explained - SOLID Design Principles
+10. Dependency Inversion Principle Explained - SOLID Design Principles
+
+Design Principles:
+https://www.youtube.com/watch?v=UQqY3_6Epbg&list=PLZlA0Gpn_vH9kocFX7R7BAe_CvvOCO_p9&ab_channel=WebDevSimplified
+
+http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html
+https://www.facebook.com/notes/10158791572847200/
+
+MIT Algorithms Course:
+https://www.youtube.com/watch?v=HtSuA80QTyo&ab_channel=MITOpenCourseWare

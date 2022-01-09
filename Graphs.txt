@@ -1,0 +1,881 @@
+Topic: Graph Theory
+https://www.youtube.com/watch?v=09_LlHjoEiY&t=19s&ab_channel=freeCodeCamp.org
+
+*Course Contents*
+- (0:00:00) Graph Theory Introduction
+- (0:13:53) Problems in Graph Theory
+- (0:23:15) Depth First Search Algorithm
+- (0:33:18) Breadth First Search Algorithm
+- (0:40:27) Breadth First Search grid shortest path
+- (0:56:23) Topological Sort Algorithm
+- (1:09:52) Shortest/Longest path on a Directed Acyclic Graph (DAG)
+- (1:19:34) Dijkstra's Shortest Path Algorithm
+- (1:43:17) Dijkstra's Shortest Path Algorithm | Source Code
+- (1:50:47) Bellman Ford Algorithm
+- (2:05:34) Floyd Warshall All Pairs Shortest Path Algorithm
+- (2:20:54) Floyd Warshall All Pairs Shortest Path Algorithm | Source Code
+- (2:29:19) Bridges and Articulation points Algorithm
+- (2:49:01) Bridges and Articulation points source code
+- (2:57:32) Tarjans Strongly Connected Components algorithm
+- (3:13:56) Tarjans Strongly Connected Components algorithm source code
+- (3:20:12) Travelling Salesman Problem | Dynamic Programming
+- (3:39:59) Travelling Salesman Problem source code | Dynamic Programming
+- (3:52:27) Existence of Eulerian Paths and Circuits
+- (4:01:19) Eulerian Path Algorithm
+- (4:15:47) Eulerian Path Algorithm | Source Code
+- (4:23:00) Prim's Minimum Spanning Tree Algorithm
+- (4:37:05) Eager Prim's Minimum Spanning Tree Algorithm
+- (4:50:38) Eager Prim's Minimum Spanning Tree Algorithm | Source Code
+- (4:58:30) Max Flow Ford Fulkerson | Network Flow
+- (5:11:01) Max Flow Ford Fulkerson | Source Code
+- (5:27:25) Unweighted Bipartite Matching | Network Flow
+- (5:38:11) Mice and Owls problem | Network Flow
+- (5:46:11) Elementary Math problem | Network Flow
+- (5:56:19) Edmonds Karp Algorithm | Network Flow
+- (6:05:18) Edmonds Karp Algorithm | Source Code
+- (6:10:08) Capacity Scaling | Network Flow
+- (6:19:34) Capacity Scaling | Network Flow | Source Code
+- (6:25:04) Dinic's Algorithm | Network Flow
+- (6:36:09) Dinic's Algorithm | Network Flow | Source Code
+
+Shortest Path Problem
+- BFS (Unweighted Graphs)
+- Dijkstra's
+- Bellman-Ford
+- Floyd-Warshall
+- A*
+
+Connectivity (If A is connected to B)
+- DFS
+- BFS
+
+Detecting Negative Cycles
+- Bellman-Ford
+- Floyd-Warshall
+
+Detecting Strongly Connected Components - Self Contained Cycles | Detecting if it is a DAG (Directed Acyclic Graphs) or not.
+- Tarjan's
+- Kosaraju's
+
+Travelling Salesman Problem (NP-Hard)
+- Held-Karp
+
+Brigdes in a Graph
+- Find bridges
+Any edge in a graph whose removal increases the number of connected components
+
+Articulation Points
+Any node in a graph whose removal increases the number of connected components
+
+Minimum Spanning Tree
+Connects all nodes minimal weight without any cycles.
+- Kruskal's
+- Prim's
+- Boruvka's
+
+Network Flow: With an Infinite input source, how much "flow" can we push through the Network
+- Ford-Fulkerson
+- Edmond-Karp
+- Dinic's
+
+DFS PROCESS:
+1. Take the current node, pop out from stack
+2. Process this current node
+3. Add all the non visited neighbours of this node to stack
+4. Repeat process till stack empty
+
+BFS PROCESS:
+1. Take out the current node from the queue
+2. Process the node
+3. Check all the neighbours who have not been visited and add them to the queue
+4. Continue this process till queue empty
+
+Topological sort:
+1. Iterate over every node in the graph, check if it is visited, if not, do DFS on this node
+2. Only add the node to the output after all the processing has happened
+3. Reverse this output
+4. Return output
+
+Djikstras:
+1. Get a graph with nodes and edges and weights for those edges
+2. Initialise bool visited[V] - false (Tracking if a node has been visited)
+3. Initialise int distance[V] - INT_MAX (Tracking the current best distance)
+4. Initialise int prev[V] (Tracking the previous node in order to calculate the path if needed)
+5. Get a Priority Queue | Indexed Priority Queue | Indexed Priority Queue with Degree Edges/Vertices
+6. Add the Start node to the queue with S, 0.0
+7. Update value of distance of Start node with 0.0
+Starting loop till Queue is empty
+8. Grab the nodeID, grab the distance from the queue
+9. Mark the nodeID as visited
+10. If distance we get is less than distance[NodeId] continue; the loop, we wont need to process this as minimum distance
+to this node has already been reached | In relation to the Greedy Approach of Dijkstras
+11. Get all the edges this nodeId is connected and parse through all of them
+12. Skip an edge if already visited
+13. Else, calculate distance to the edge using NodeId by:
+new_distance = distance[NodeId] + graph[nodeId][edgeId]
+14. Check if new_distance < distance[edgeId]
+15. If true, then update the prev[edge.to] as NodeId and distance[edge.to] as new_distance
+16. Update this value into the Queue accordingly (If does not exist, add. Else, update key-value)
+17. Check if the destination source is reached. Else continue
+
+#include<bits/stdc++.h>
+#include <iostream>
+#include <queue>
+
+using namespace std;
+//int dijsktras(int n, int start, int destination,int adj[n][n]);
+
+int dijsktras(int n, int start, int destination,vector<vector<int>> &adj){
+	int distance[n];
+	for(int i=0;i!=n;++i){
+		distance[i] = INT_MAX;
+	}
+	bool visited[n];
+	memset(visited,false,sizeof(visited));
+
+	priority_queue<pair<int,int>,
+	vector<pair<int,int>>, greater<pair<int,int>>> pq;
+
+	distance[start] = 0;
+	pq.push(make_pair(start,0));
+	while(!pq.empty()){
+		pair<int,int> current = pq.top();
+		pq.pop();
+		int nodeId = current.first;
+		int minvalue = current.second;
+		visited[nodeId] = true;
+		for(int j=0;j!=n;++j){
+
+			int new_distance = distance[nodeId] + adj[nodeId][j];
+			if(adj[nodeId][j] ==0 || distance[j] < new_distance){
+				continue;
+			}
+
+			if(new_distance < distance[j]){
+				distance[j] = new_distance;
+			}
+			pq.push(make_pair(j,distance[j]));
+		}
+	}
+	return distance[destination];
+}
+
+int main(){
+	int n;
+	cin>>n;
+	vector<vector<int>> adj(n ,vector<int>(n,0));
+	for(int i=0;i!=n;++i){
+		for(int j=0;j!=n;++j){
+			cin>>adj[i][j];
+		}
+	}
+	// running dijsktras from each node.
+	int queries;
+	cin>>queries;
+	for(int i=0;i!=queries;++i){
+		int source;
+		int destination;
+		cin>>source;
+		cin>>destination;
+		int shortest_path = dijsktras(n,source,destination,adj);
+		cout<<shortest_path<<"\n";
+	}
+	return 0;
+}
+
+Optimisations:
+1. Not checking the node if it is already visited
+2. Stopping Early | Stop if the destination is reached
+3. Using indexed priority queues
+4. D-ary Heap optimisation
+
+All Graphs questions:
+https://lenchen.medium.com/leetcode-topics-graph-7162451736c
+
+Read up about Indexed Priority Queue
+
+Bellman-Ford Algorithm:
+- Works with Negative Cycles | Helps in detecting Negative Cycles
+
+Steps:
+E - Edges
+V - Vertices
+S - Starting Node
+D - Array of size V that tracks the best distance from S to each node
+
+1. Make D an array of size V
+2. Initialize D with INT_MAX (+Infinity)
+3. Loop through V times and for each edge:
+for(int i=0;i!=V;++i){
+ if(distance[edge.from] + edge.cost < distance[edge.to]){
+ distance[edge.to] = distance[edge.from] + edge.cost;
+ }
+}
+4. Do the same step again but if a better distance is found, update to INT_MIN (-Infinity)
+for(int i=0;i!=V;++i){
+ if(distance[edge.from] + edge.cost < distance[edge.to]){
+ distance[edge.to] = INT_MIN;
+ }
+}
+
+Psuedo Code:
+
+int distance[V];
+for(int i=0;i!=V;++i){
+ distance[i] = INT_MAX;
+}
+
+// Processing
+distance[S] = 0;
+for(int i=0;i!=V;++i){
+for(int j=0;j!=V;++j){
+ if(distance[j] < distance[i] + adj[i][j]){
+  distance[j] = distance[i] + adj[i][j];
+ }
+}
+}
+
+// to find negative cycles
+for(int i=0;i!=V;++i){
+for(int j=0;j!=V;++j){
+ if(distance[j] < distance[i] + adj[i][j]){
+  distance[j] = INT_MIN;
+ }
+}
+}
+
+Code:
+Edges are defined as:
+u: edges[j][0]
+v: edges[j][1]
+w: edges[j][2]
+
+int isNegativeWeightCycle(int n, vector<vector<int>>edges){
+	    // Code here
+	    int distance[n];
+	    for(int i=0;i!=n;++i){
+	        distance[i] = INT_MAX;
+	    }
+
+	    // relaxing each edges n-1 times
+	    distance[0] = 0;
+	    for(int i=0;i!=n-1;++i){
+	        for(int j=0;j!=edges.size();++j){
+	            int u = edges[j][0];
+	            int v = edges[j][1];
+	            int weight = edges[j][2];
+	            if(distance[u] + weight < distance[v] && distance[u] != INT_MAX){
+	                distance[v] = distance[u] + weight;
+	            }
+	        }
+	    }
+
+	    // if we can relax again, negative cycles exist
+	    for(int i=0;i!=n-1;++i){
+	        for(int j=0;j!=edges.size();++j){
+	            int u = edges[j][0];
+	            int v = edges[j][1];
+	            int weight = edges[j][2];
+              // if we are able to improve, negative cycles exist
+	            if(distance[u] + weight < distance[v] && distance[u] != INT_MAX){
+	                return 1;
+	            }
+	        }
+	    }
+	    return 0;
+	}
+
+Floyd-Warshall Algorithm O(V^3):
+
+- All Pairs Shortest Path Algorithm
+Logic:
+
+m[a][b] = V
+if(m[a][c] + m[c][b] < V){
+then distance between a -> b is best reached through a->c->b
+}
+
+LOGIC: using DP
+dp[k][i][j] <- Cache intermediate paths | Best distance from i to j through [0,k] intermediate nodes
+dp[k][i][j] = m[i][j] if k = 0
+dp[k][i][j] = min(current direct distance between i and j [without using intermediate nodes]
+                  , distance between i and j using k-1 intermediate nodes);
+dp[k][i][j] = min(dp[k-1][i][j], d[k-1][i][k] + dp[k-1][k][j]);
+
+To make updates in place:
+if k ==0: dp[i][j] = m[i][j]
+else: dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j])
+
+NOTE:
+- If we are running an algorithm which can deal with negative cycles
+- To detect Negative Cycles in the Graphs, run the same algorithm again, if we are getting better values
+- Then that node is affected by a negative cycle.
+
+CODE:
+void shortest_distance(vector<vector<int>>&matrix){
+	    // Code here
+	    int n = matrix.size();
+	    for(int k=0;k!=n;++k){
+	        for(int i=0;i!=n;++i){
+	            for(int j=0;j!=n;++j){
+	                if(matrix[i][k] == -1 || matrix[k][j] == -1){
+	                    continue;
+	                }
+	                if(matrix[i][j] == -1){
+	                    matrix[i][j] = matrix[i][k] + matrix[k][j];
+	                }else{
+	                    matrix[i][j] = min(matrix[i][j],
+	                                        matrix[i][k] + matrix[k][j]);
+	                }
+	            }
+	        }
+	    }
+	}
+
+Finding Bridges and Articulation Points:
+
+Finding Bridges:
+
+Code:
+
+void dfs(int at, int parent, vector<int> &bridges){
+ visited[at] = true;
+ low[at] = ids[at] = id;
+ ++id;
+
+ for(auto i=adj[at].begin();i!=adj[at].end();++i){
+  if(parent == *i){
+  continue;
+  }
+  if(!visited[*i]){
+  dfs(*i,at,bridges);
+  low[at] = min(low[at], low[*i]);
+  if(ids[at] < low[to]){
+   bridges.push_back(at);
+   bridges.push_back(to);
+  }
+  }else{
+   low[at] = min(low[at], ids[*i]);
+  }
+ }
+}
+
+void findBridges(){
+ int id=0;
+ vector<int> ids(n);
+ vector<int> low(n);
+ vector<bool> visited(n,false);
+ vector<int> bridges;
+ for(int i=0;i!=n;++i){
+  if(!visited[i]){
+    dfs(i,-1,bridges);
+  }
+ }
+ return bridges;
+}
+
+Articulation Points:
+
+void dfs(int root, int at, int parent){
+ if(parent == root){
+  ++root_out_going_edges;
+ }
+ visited[at] = true;
+ ids[at] = low[at] = id;
+ ++id;
+
+ for(for all: to){
+  if(at == parent){
+   continue;
+  }
+  if(!visited[at]){
+   dfs(root,to,at);
+   low[at] = min(low[at], low[to]);
+   if(ids[at] <= low[to]){
+    is_articulation_point[at] = true;
+   }
+  }else{
+   low[at] = min(low[at], ids[to]);
+  }
+ }
+}
+
+void articulationPoints(){
+ int id=0;
+ vector<int> ids(n);
+ vector<int> low(n);
+ vector<bool> visited(n,false);
+ vector<bool> is_articulation_point(n,false);
+ int root_out_going_edges;
+ for(int i=0;i!=n;++i){
+  root_out_going_edges = 0;
+  dfs(i,i,-1);
+  is_articulation_point[i] = (root_out_going_edges>1);
+ }
+
+ return is_articulation_point;
+}
+
+FULL WORKING CODE:
+/*
+// Sample code to perform I/O:
+
+cin >> name;                            // Reading input from STDIN
+cout << "Hi, " << name << ".\n";        // Writing output to STDOUT
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
+
+// Write your code here
+#include<bits/stdc++.h>
+#include<queue>
+using namespace std;
+
+void findArticulationPoints(int root, int at, int parent, vector<pair<int,int>> &bridges,
+                vector<vector<int>> &adj, vector<int> &low, vector<int> &ids,
+                vector<bool> &visited, int &id, int &outward_root_edges,
+                vector<bool> &is_articulation_point){
+    if(root == parent){
+        ++outward_root_edges;
+    }
+    visited[at] = true;
+    low[at] = ids[at] = id;
+    ++id;
+
+    for(int to=0;to!=low.size();++to){
+        if(adj[at][to] == 1){
+            if(to == parent){
+                continue;
+            }
+            if(!visited[to]){
+                findArticulationPoints(root,to,at,bridges,adj,low,ids,
+                visited,id,outward_root_edges,is_articulation_point);
+                low[at] = min(low[at], low[to]);
+                if(ids[at] <= low[to]){
+                    is_articulation_point[at] = true;
+                }
+            }else{
+                low[at] = min(low[at], ids[to]);
+            }
+        }
+    }
+}
+
+void findBridges(int at, int parent, vector<pair<int,int>> &bridges,
+                vector<vector<int>> &adj, vector<int> &low, vector<int> &ids,
+                vector<bool> &visited, int &id){
+    visited[at] = true;
+    low[at] = ids[at] = id;
+    ++id;
+
+    for(int to=0;to!=low.size();++to){
+        if(adj[at][to] == 1){
+            if(to == parent){
+                continue;
+            }
+            if(!visited[to]){
+                findBridges(to,at,bridges,adj,low,ids,visited,id);
+                low[at] = min(low[at], low[to]);
+                if(ids[at] < low[to]){
+                    bridges.push_back(make_pair(at,to));
+                }
+            }else{
+                low[at] = min(low[at], ids[to]);
+            }
+        }
+    }
+}
+
+int main(){
+ int V;
+ int E;
+ int u;
+ int v;
+ cin>>V>>E;
+ vector<vector<int>> adj(V,vector<int>(V,0));
+ for(int i=0;i!=E;++i){
+     cin>>u>>v;
+     adj[u][v] = 1;
+ }
+
+ // Finding Bridges
+ vector<int> low(V);
+ vector<int> ids(V);
+ int id=0;
+ vector<bool> visited(V,false);
+ vector<pair<int,int>> bridges;
+
+ for(int i=0;i!=V;++i){
+     if(!visited[i]){
+         findBridges(i,-1,bridges,adj,low,ids,visited,id);
+     }
+ }
+ // Print Bridges
+ priority_queue<pair<int,int>, vector<pair<int,int>>,
+ greater<pair<int,int>>> pq;
+
+ //cout<<"Bridges in the Graph are: \n";
+ for(auto pairs=bridges.begin();pairs!=bridges.end();++pairs){
+     pair<int,int> value = *pairs;
+     pq.push(make_pair(value.first,value.second));
+ }
+
+// Find the Articulation Points
+low.clear();
+ids.clear();
+visited.clear();
+vector<int> low2(V);
+vector<int> ids2(V);
+id=0;
+for(int i=0;i!=V;++i){
+    visited.push_back(false);
+}
+vector<bool> is_articulation_point(V,false);
+int outward_root_edges;
+
+ for(int i=0;i!=V;++i){
+     if(!visited[i]){
+         outward_root_edges = 0;
+         findArticulationPoints(i,i,-1,bridges,adj,low2,ids2,
+         visited,id,outward_root_edges,is_articulation_point);
+         if(outward_root_edges > 1){
+             is_articulation_point[i] = true;
+         }
+         if(i == 0 && outward_root_edges == 1){
+             is_articulation_point[0] = false;
+         }
+     }
+ }
+
+// Print Articulation Points
+//cout<<"Articultion Points in the Graph are: \n";
+int count_articulation_points = 0;
+
+for(int i=0;i!=V;++i){
+     if(is_articulation_point[i] == true){
+         ++count_articulation_points;
+     }
+ }
+ cout<<count_articulation_points<<"\n";
+ for(int i=0;i!=V;++i){
+     if(is_articulation_point[i] == true){
+         cout<<i<<" ";
+     }
+ }
+cout<<"\n";
+int count_bridges = pq.size();
+cout<<count_bridges<<"\n";
+
+while(!pq.empty()){
+    pair<int,int> value = pq.top();
+    pq.pop();
+    cout<<value.first<<" "<<value.second<<"\n";
+}
+ return 0;
+}
+
+Strongly connected components | Tarjan's algorithm
+
+Strongly connected components: Self contained cycles within a directed graph where
+every vertex can reach every other vertex in the same cycle.
+
+Tarjan's algorithm:
+
+void dfs(int at){
+ low[at] = id;
+ ids[at] = id;
+ visited[at] = true;
+ stack.push(at);
+ on_stack[at] = true;
+ ++id;
+
+ for(edges to: in graph){
+  if(!visited[i]){
+   dfs(to);
+  }
+  if(on_stack[to]){
+   low[at] = min(low[at],low[to]);
+  }
+ }
+
+ if(low[at] = ids[at]){
+  while(true){
+   int node = st.top();
+   low[node] = low[at];
+   on_stack[node] = false;
+   st.pop();
+   if(node == at){
+    st.pop();
+    break;
+   }
+ }
+ ++scc_count;
+}
+}
+
+void solve(){
+ vector<int> ids(n);
+ vector<bool> visited(n,false);
+ vector<int> low(n);
+ int id = 0;
+ int scc_count = 0;
+ vector<bool> on_stack(n, false);
+ stack<int> st;
+
+ for(int i=0;i!=n;++i){
+  if(!visited[i]){
+   dfs(i);
+  }
+ }
+ return low;
+}
+
+FULL CODE:
+class Solution
+{
+	public:
+
+	void dfs(int at, vector<int> &low, vector<int> &ids
+	        , vector<bool> &visited, int &id, vector<int> adj[]
+	        , vector<vector<int>> &result, vector<bool> &on_stack,
+	        stack<int> &st){
+	    st.push(at);
+	    on_stack[at] = true;
+	    low[at] = id;
+	    ids[at] = id;
+	    visited[at] = true;
+	    ++id;
+
+	    for(auto to=adj[at].begin();to!=adj[at].end();++to){
+	        if(!visited[*to]){
+	            dfs(*to,low,ids,visited,id,adj,result,on_stack,st);
+	        }
+	        if(on_stack[*to]){
+	            low[at] = min(low[at], low[*to]);
+	        }
+	    }
+	    vector<int> temp;
+	    if(ids[at] == low[at]){
+	        while(true){
+	            int node = st.top();
+	            st.pop();
+	            on_stack[node] = false;
+	            low[node] = low[at];
+	            temp.push_back(node);
+	            if(node == at){
+	                sort(temp.begin(),temp.end());
+	                result.push_back(temp);
+	                break;
+	            }
+	        }
+	    }
+	}
+    //Function to return a list of lists of integers denoting the members
+    //of strongly connected components in the given graph.
+    vector<vector<int>> tarjans(int V, vector<int> adj[])
+    {
+        //code here
+        vector<int> low(V);
+        vector<int> ids(V);
+        int id = 0;
+        vector<vector<int>> result;
+        vector<bool> visited(V,false);
+        vector<bool> on_stack(V,false);
+        stack<int> st;
+
+        for(int i=0;i!=V;++i){
+            if(!visited[i]){
+                dfs(i,low,ids,visited,id,adj,result,on_stack,st);
+            }
+        }
+        sort(result.begin(),result.end());
+        return result;
+    }
+};
+
+Travelling Salesman Problem (PLEASE DO ALL OF THIS):
+https://leetcode.com/problems/shortest-path-visiting-all-nodes/
+https://www.hackerrank.com/contests/bitsg-ai-lab-2/challenges/travelling-salesman-problem/problem
+https://www.hackerrank.com/contests/mar14/challenges/tsp-grid/problem
+
+Use this video to understand the concept of how TSP actually works with permuatations:
+https://www.youtube.com/watch?v=-JjA4BLQyqE&ab_channel=TusharRoy-CodingMadeSimple
+
+The basic implementation explains the same in a decision tree. (Implemented using Bit Manipulation)
+Basic implementation of TSP:
+https://www.youtube.com/watch?v=JE0JE8ce1V0&ab_channel=CodingBlocks
+
+int n = 4;
+dist = {define an array};
+int dp[n][n];
+
+int complete = (1<<n) - 1;
+int tsp(int mask, int pos){
+ if(mask == complete){
+  return dist[pos][0];
+ }
+ if(dp[mask][pos] != -1 ){
+  return dp[mask][pos];
+ }
+ int ans = INT_MAX;
+ for(int i=0;i!=n;++i){
+  if(mask&(1<<i) == 0){
+   int newdist = dist[pos][i] + tsp(mask|(1<<i),i);
+   ans = min(newdist, ans);
+  }
+ }
+ return ans;
+}
+
+int main(){
+ memset(dp,-1,sizeof(dp));
+ cout<<tsp(1,0);
+}
+
+FULL CODE:
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int n = 4;
+int dist[10][10] = {
+        {0,20,42,25},
+        {20,0,30,34},
+        {42,30,0,10},
+        {25,34,10,0}
+};
+
+int complete = (1<<n) - 1;
+int size = pow(2,n) +1;
+
+// dp[2^N+1][N+1]
+int dp[15][5];
+
+int tsp(int mask, int pos){
+    if(mask == complete){
+        return dist[pos][0];
+    }
+    if(dp[mask][pos] != -1){
+        return dp[mask][pos];
+    }
+
+    int ans = INT_MAX;
+    for(int to=0;to!=n;++to){
+        if((mask&(1<<to)) == 0){
+            int newdist = dist[pos][to] + tsp(mask|(1<<to),to);
+            ans = min(ans,newdist);
+        }
+    }
+    return dp[mask][pos] = ans;
+}
+
+int main(){
+    /* init the dp array */
+    memset(dp,-1,sizeof(dp));
+    cout<<"Least distance: "<<tsp(1,0);
+    return 0;
+}
+
+Eulerian Path:
+A path which visits all the edges in a graph exactly once.
+
+Eulerian Circuit:
+An Eulerian Path which starts and ends at the same node/vertex.
+
+Conditions for Eulerian Paths and Circuits:
+
+Undirected Graph:
+Eulerian Circuit: Every vertex has an even degree.
+Eulerian Path: Every vertex has an even degree and exactly 2 vertices have odd degrees.
+
+Directed Graph:
+Eulerian Circuit: Every vertex has equal indegree and outdegree
+Euleriean Circuit: Every vertex has equal indegree and outdegree and atmost one vertex has (indegree) - (outgree) = 1
+and atmost one vertex has (outdegree) - (indegree) = 1.
+
+Eulerian path pseudo code:
+
+void dfs(int at){
+ visited[at] = true;
+ while(out[at] != 0){
+  for(auto to=adj[at].begin();to!=adj[at].end();++to){
+   if(!visited[*to]){
+    --out[at];
+    dfs(*to);
+   }
+  }
+ }
+ path.push_front(at);
+}
+
+/* alternate code here is
+void dfs(int at){
+ while(out[i] == 0){
+  int next = graph.get(at).get(--out[at]);
+  dfs(next);
+ }
+ path.push_front(at);
+}
+*/
+
+int findStartingNode(){
+ int start = 0;
+ for(int i=0;i!=n;++i){
+  if(out[i]-in[i] == 1){
+   return i;
+  }
+  if(out[i]>0){
+   start = i;
+  }
+ }
+ return start;
+}
+
+bool hasAnEulerianPath(){
+ int startnode = 0;
+ int endnode = 0;
+ for(int i=0;i!=V;++i){
+  if(in[i]-out[i] > 1 || out[i]-in[i] > 1){
+   return false;
+  }
+  else if(in[i]-out[i]){
+   endnode++;
+  }
+  else if(out[i]-in[i]){
+   startnode++;
+  }
+ }
+ return ((startnode == 0 && endnode == 0)||(startnode == 1 && endnode == 1));
+}
+
+bool setup(){
+ vector<int> in(V);
+ vector<int> out(V);
+ for(int from=0;from!=V;++from){
+  for(auto to=adj[from].begin();to!=adj[from].end();++to){
+   out[from]++;
+   in[*to]++;
+   edgecount++;
+  }
+ }
+}
+
+void solve(){
+ setup();
+ if(edgecount == 0){
+  return null;
+ }
+ if(!hasAnEulerianPath()){
+  return null;
+ }
+ dfs(findStartingNode());
+ if(path.size() == m-1){
+  return path;
+ }
+ return null;
+}
+
+Prim's Minimum spanning tree algorithm
+
+Given an undirected Graph with weighted edges, a Minimum Spanning Tree (MST) is a subset of all edges in the graph
+which connects all vertices together (without creating cycles) while minimising the edge cost.

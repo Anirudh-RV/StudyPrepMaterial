@@ -1,0 +1,146 @@
+VERY IMPORTANT NEED TO DO!
+
+TEST PREP:
+
+Testdome:
+https://www.testdome.com/tests/software-engineering-online-test/124
+
+**Operating System Concepts**
+
+Interview Questions (NEED TO DO!)
+1. https://www.interviewbit.com/operating-system-interview-questions/ (DONE)
+2. https://career.guru99.com/top-50-operating-system-interview-questions/
+
+*TO LEARN*
+1. What is RAID? Learn more about how RAID actually works.
+2. What is Reentrancy?
+
+**IMPORTANT**
+NEETCODE 75 LIST:
+https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0
+Personal copy:
+https://docs.google.com/spreadsheets/d/1LLIGzm3tpkKy7ruUAJBsx0-zdfS-DgztzTZwUk_GDj8/edit#gid=0
+
+Dynamic Programming Patterns
+https://docs.google.com/spreadsheets/u/0/d/1N6A-XeEx_A6oJsXIBwR7ICG6gacUiz7EhCmJBTrZYj4/edit?fromCopy=true
+
+IMPORTANT QUESTIONS:
+https://seanprashad.com/leetcode-patterns/
+
+GFG OS:
+https://www.geeksforgeeks.org/operating-systems/
+
+123 Videos, watch them (DONE)
+https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD
+https://www.youtube.com/watch?v=iMD1Z3f9ioI&list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&index=26&ab_channel=GateSmashersGateSmashersVerified
+
+**SQL QUESTIONS**
+1. https://www.youtube.com/watch?v=-WEpWH1NHGU&ab_channel=edureka%21 (DONE)
+2. https://www.youtube.com/watch?v=kqxzLaX20HE&ab_channel=RogerAlbornoz
+3. https://www.edureka.co/blog/interview-questions/sql-interview-questions
+
+Cheat sheet:
+https://www.interviewbit.com/sql-interview-questions/
+
+**MONGO DB**
+
+**System Design**:
+https://www.geeksforgeeks.org/software-design-patterns/?ref=ghm
+
+BOOKS:
+CRACKING THE CODING INTERVIEW
+
+Backtracking:
+https://www.youtube.com/watch?v=pfiQ_PS1g8E&list=PLot-Xpze53lf5C3HSjCnyFghlW0G1HHXo&index=3&ab_channel=NeetCode
+
+DP:
+https://www.freecodecamp.org/news/demystifying-dynamic-programming-3efafb8d4296/
+https://codeforces.com/blog/entry/43256
+
+General prep help:
+https://www.geeksforgeeks.org/interview-preparation-for-software-developer/?ref=ghm
+
+Company wise prep:
+https://www.geeksforgeeks.org/company-preparation/?ref=ghm
+
+TODO:
+https://leetcode.com/problems/minimum-window-substring/solution/ (NEED TO UNDERSTAND THE CODE)
+https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+https://leetcode.com/problems/subarray-sum-equals-k/
+https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+1. Tower of Hanoi
+2. Coin Change
+3. Egg dropping
+4. Generating all permutation
+5. Rat in maze
+6. N -Queen
+7. Subset Sum
+
+https://leetcode.com/problems/regular-expression-matching/
+https://www.geeksforgeeks.org/string-with-additive-sequence/
+https://www.geeksforgeeks.org/how-to-print-maximum-number-of-a-using-given-four-keys/
+Least Comman Ancestor For Binary Tree
+https://practice.geeksforgeeks.org/problems/subsets-1587115621/1#
+
+Different views in a tree
+left, right, top, bottom, full outline view
+Maximum Distance between node and it's Ancestor
+
+MCM:
+https://leetcode.com/problems/burst-balloons/
+
+TOPICS:
+Arrays
+Remove, Search, Range Search, insert position, Rotate, Search in rotated, Max subarray, Set Matrix, Pascal’s Triangle, 2 Sum, 3 Sum, Single number, Intersection, Majority, Duplicates, Missing, Consecutive sequence, valid sudoku, plus one
+Sorting
+Bubble, Insertion, Counting, Quick, Merge
+Heap
+Kth largest in array, Kth smallest in matrix, Median, Ugly Number, Super Ugly Number
+Strings
+Reverse, First unique char, anagram, pallindrome, last word, common prefix, substring without repeating chars,
+Numbers
+Pallindrome, Power, Sqrt, Reverse, Happy number, Guess number, Next permutation, single
+Linked Lists
+Delete, Reverse, Remove, Cycle, Reverse range, Rotate, Partition, Merge, Swap Node, Add, Add one, Remove duplicates, Pallindrome, Odd-even
+Binary Trees
+Max depth, Min depth, Invert, Same, LCA, Level order, Inorder, Preorder, Postorder, Balanced, Symmetric, Validate, Paths, Path sum, Max path sum, Right side view, Flatten to linked list, Kth smallest, Next Right
+Graphs
+Islands
+Dynamic Programming
+Climb Stairs, House Robber, Combination Sum, Palindromic Substring, Max product subarray, Frog Jump, Coin Change, Unique Paths, LIS, minimum path sum
+Design
+Chess, Twitter, LRU cache, Swimming Pool, Payment Gateway, ATM
+
+HAS 25 QUESTIONS FOR PRACTICE (NEED TO DO ALL):
+https://medium.com/javarevisited/top-25-amazon-sde-interview-questions-cfe0ef70ba9e
+
+TOP INTERVIEW QUESTIONS:
+https://leetcode.com/problemset/all/?listId=wpwgkgt
+
+TOP 100 LIKED QUESTIONS:
+https://leetcode.com/problemset/all/?listId=79h8rn6
+
+AMAZON QUESTIONS:
+https://zpjiang.me/2017/11/13/top-k-elementes-system-design/
+
+TRY:
+https://practice.geeksforgeeks.org/problems/snake-and-ladder-problem4816/1
+
+TODO:
+Palindromic patitioning | 132. Palindrome Partitioning II (NEED O(N^2) SOLUTION FOR THIS)
+131. Palindrome Partitioning (DIFFERENT APPROACH)
+
+FREE CODE CAMP: (HUGE VIDEOS!)
+GRAPHS: https://www.youtube.com/watch?v=09_LlHjoEiY&t=19s&ab_channel=freeCodeCamp.org
+DP: https://www.youtube.com/watch?v=oBt53YbR9Kk&t=349s&ab_channel=freeCodeCamp.org
+
+More playlists: (Channel: NEETCODE)
+⭐ BLIND-75 PLAYLIST: https://www.youtube.com/watch?v=KLlXC...
+💡 CODING SOLUTIONS: https://www.youtube.com/playlist?list...
+💡 DYNAMIC PROGRAMMING PLAYLIST: https://www.youtube.com/watch?v=73r3K...
+🌲 TREE PLAYLIST: https://www.youtube.com/watch?v=OnSn2...
+💡 GRAPH PLAYLIST: https://www.youtube.com/watch?v=EgI5n...
+💡 BACKTRACKING PLAYLIST: https://www.youtube.com/watch?v=pfiQ_...
+💡 LINKED LIST PLAYLIST: https://www.youtube.com/watch?v=G0_I-...
+💡 BINARY SEARCH PLAYLIST: https://www.youtube.com/playlist?list...

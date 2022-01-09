@@ -1,0 +1,4469 @@
+#DATE: 3/02/2021 11:00 AM - 12:00 PM
+Topic: Python syntax check
+Resources:
+- https://www.w3schools.com/python/
+
+Completed till: https://www.w3schools.com/python/python_dictionaries_exercises.asp
+
+#DATE: 4/02/2021 11:00 AM - 12:00PM
+Topic: Python syntax check
+
+Resources:
+- Completed https://www.w3schools.com/python/
+
+Topic: Variable naming and best practices:
+
+Resources:
+- Completed https://realpython.com/python-pep8/
+
+TODO:
+-Google styles for python: https://google.github.io/styleguide/pyguide.html
+
+#DATE: 5/02/2021 11:00 AM - 12:00PM
+Topic: Python best practices
+
+Resources:
+Google styles for python: https://google.github.io/styleguide/pyguide.html
+
+How to use docstring to explain functions/modules:
+
+GOOGLE EXAMPLE:
+def fetch_smalltable_rows(table_handle: smalltable.Table,
+                          keys: Sequence[Union[bytes, str]],
+                          require_all_keys: bool = False,
+) -> Mapping[bytes, Tuple[str]]:
+    """Fetches rows from a Smalltable.
+
+    Retrieves rows pertaining to the given keys from the Table instance
+    represented by table_handle.  String keys will be UTF-8 encoded.
+
+    Args:
+        table_handle: An open smalltable.Table instance.
+        keys: A sequence of strings representing the key of each table
+          row to fetch.  String keys will be UTF-8 encoded.
+        require_all_keys: Optional; If require_all_keys is True only
+          rows with values set for all keys will be returned.
+
+    Returns:
+        A dict mapping keys to the corresponding table row data
+        fetched. Each row is represented as a tuple of strings. For
+        example:
+
+        {b'Serak': ('Rigel VII', 'Preparer'),
+         b'Zim': ('Irk', 'Invader'),
+         b'Lrrr': ('Omicron Persei 8', 'Emperor')}
+
+        Returned keys are always bytes.  If a key from the keys argument is
+        missing from the dictionary, then that row was not found in the
+        table (and require_all_keys must have been False).
+
+    Raises:
+        IOError: An error occurred accessing the smalltable.
+    """
+**Come back to Google best practices again in April
+
+Resources:
+Summary of best practices on python : https://gist.github.com/sloria/7001839
+
+#DATE: 08/02/21 6:30 PM - 7:30PM
+
+Topic: C++ Syntax
+Resources:
+- Completed till Chapter 10: Storage Classes
+https://www.tutorialspoint.com/cplusplus/cpp_tutorial.pdf
+
+Topic: C++ Best practices
+Resources:
+http://web.mit.edu/6.s096/www/standards.html
+
+TODO:
+- Finish C++ Syntax:
+https://www.tutorialspoint.com/cplusplus/cpp_tutorial.pdf
+
+- Reference for simple C++:
+https://www.tutorialspoint.com/cplusplus/pdf/cpp_basic_syntax.pdf
+
+#DATE: 09/02/21 11:00 AM - 12:00PM
+
+Topic: C++ Syntax
+
+- Completed
+https://www.tutorialspoint.com/cplusplus/cpp_tutorial.pdf
+https://www.tutorialspoint.com/cplusplus/pdf/cpp_basic_syntax.pdf
+
+Topic: C++ STL
+
+Resources:
+https://www.geeksforgeeks.org/cpp-stl-tutorial/
+https://www.tutorialspoint.com/cplusplus/cpp_stl_tutorial.htm
+
+Text Book:
+https://www.cppreference.com/Cpp_STL_ReferenceManual.pdf
+
+
+Important STL Algorithms:
+https://www.geeksforgeeks.org/c-magicians-stl-algorithms/
+
+
+STL INTRODUCTION:
+- Completed till Algorithms
+https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
+
+TODO:
+Complete:
+1. https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
+2. https://www.geeksforgeeks.org/cpp-stl-tutorial/
+
+#DATE: 10/02/21 10:30 AM - 11:30 AM
+
+Topic: C++ STL
+- Completed Containers
+https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
+
+TODO:
+Complete:
+1. https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
+2. https://www.geeksforgeeks.org/cpp-stl-tutorial/
+
+#DATE 11/02/21 11:10 AM - 12:10PM
+
+Topic: C++ STL
+Resources:
+ -Completed https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
+
+Topic: C++ Best Practices
+Resources:
+ - Completed https://isocpp.org/wiki/faq/coding-standards
+
+
+TODO:
+C++ Core Guidelines: http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+
+**********************************************************************
+C++ Best Practices (VERY IMPORTANT, Complete the whole chapter):
+https://lefticus.gitbooks.io/cpp-best-practices/content/03-Style.html
+**********************************************************************
+
+#DATE 12/02/21 11:05 AM - 12:05 PM
+
+Topic: C++ Best Practices
+Resources:
+ - Completed https://lefticus.gitbooks.io/cpp-best-practices/content/03-Style.html
+
+ - 00:29:00 https://www.youtube.com/watch?v=qH6sSOr-yk8&ab_channel=PauloPortela
+
+TODO:
+Watch when bored: https://www.youtube.com/watch?v=qH6sSOr-yk8&ab_channel=PauloPortela
+
+TODO:
+Watch:
+1. https://www.youtube.com/watch?v=2olsGf6JIkU&ab_channel=CppCon
+
+
+DATE: 18/02/2021 10:50 AM- 11:50 AM
+
+
+Topic: Array
+Resources:
+GFG: https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&page=1&category%5B%5D=Arrays
+
+Problems:
+1. Largest Element in Array
+2. Game with nos
+3. C++ Arrays (Sum of array) | Set 1
+4. Play With OR
+5. Cyclically rotate an array by one
+6. Find minimum and maximum element in an array
+7. Display longest name
+
+TODO DONE:
+Rotate Array
+
+#DATE: 19/02/2021 11:00 AM  - 12:00 PM
+
+Topic: Array
+
+Problems:
+1. Rotate Array
+Study this: https://www.geeksforgeeks.org/array-rotation/
+2. Product of maximum in first array and minimum in second
+3. Nuts and Bolts Problem (DO THIS WITHOUT MAP)
+
+#DATE 22/02/2021 11:35 AM - 12:05 PM
+
+Topic: Array
+
+Problems:
+1. Wave Array
+2. Multiply left and right array sum
+3. Balanced Array
+4. Maximum in Struct Array
+5. Fighting the darkness
+6. Count the Zeros (Binary search for 0 which has a 1 on it's left side)
+
+#DATE 23/02/2021 11:00 AM - 12:00 PM
+
+Topic: Array
+
+Problems:
+1. Form a number divisible by 3 using array digits
+Involves mathematics where the sum of digits in a number must be divisible by 3 for
+it to be divisible by 3
+
+2. Segregate 0s and 1s
+
+3. Sort an array of 0s, 1s and 2s
+
+Concept of low , mid, high
+These are the following steps:
+Maintain 3 variables low, high and mid
+low - all elements before low are 0
+mid - all elements between low and mid are 1
+high - all elements after high are 2
+Initially low, mid are set at 0 and high is at n-1
+Now, we iterate mid from 0 to high, and for every element
+if it is equal to 0, we swap it with element at low, and increment low and mid
+else if it is equal to 2, we swap it with element at high, and decrement high
+else we just increment mid (i.e element is equal to 1)
+
+4. Length of longest subarray
+
+TODO DONE:
+Index Of an Extra Element
+
+#DATE 24/02/2021 11:00 AM - 12:00 PM
+
+Topic: Array
+
+Problems:
+1. Index Of an Extra Element
+If mids are same, elements till that index are sorted, hence check for elements on the right
+
+2. Replace all 0's with 5
+3. Find Number of Numbers
+4. Kadane's Algorithm
+  Algorithm:
+  Initialize:
+      max_so_far = a[0]
+      max_ending_here = a[0]
+  Do:
+      -> Go through loop
+      -> Check if current_max = max(a[i],current_max+a[i])
+      -> Check if overall_max = max(current_max,overall_max)
+ return overall_max
+
+TODO:
+Learn METHOD 3 (A Juggling Algorithm)
+https://www.geeksforgeeks.org/array-rotation/
+
+#DATE 25/02/2021 11:05 AM - 12:05 PM
+
+Topic: Array
+
+Problems:
+1. Ishaan Loves Chocolates
+2. Find Transition Point
+3. Three way partitioning
+If any problem says partition in 3 ways, remember how to partition 0,1,2 it will always be the same logic
+4. Implement 2 stacks in an array
+
+#DATE 26/02/2021 11:05 AM - 12:05 PM
+
+Topic: Array
+
+Problems:
+
+1. Subarrays with equal 1s and 0s
+2. Subarrays with sum 0
+
+Algorithm:
++ Make hashmap of <int,vector<int>>
++ Make a vector of pairs vector<pair<int,int>>
++ Calculate sum at each index,
+ - If sum is 0, then the subarray from 0 to i, it's sum is 0
+ - If sum is already in the map, then it means everyelement pair of (map[sum]+1,i) is 0
++ add the element to the map of the sum map[sum].push_back(i)
+
+DO NOT FIND THE VECTOR IF YOU JUST WANT TO RETURN NUMBER OF SUB ARRAYS
+
+3. Equilibrium index of an array
+int findEquilibrium(int arr[], int n)
+{
+  //Your code here
+  int lsum =0;
+  int rsum=0;
+  int crsum;
+  int equilibrium_point = -1;
+  for(int it=0;it<n;++it){
+      rsum += arr[it];
+  }
+
+ // cout<<"lsum: "<<lsum<<", rsum:"<<rsum<<endl;
+
+  for(int it=0;it<n;++it){
+      crsum = rsum - (lsum+arr[it]);
+     // cout<<"lsum: "<<lsum<<", crsum:"<<crsum<<endl;
+      if(lsum == crsum){
+          equilibrium_point = it;
+      }
+      lsum += arr[it];
+  }
+  return equilibrium_point;
+}
+
+
+#DATE 01/03/2021 11:05 AM - 12:05 PM
+
+Topic: Array
+
+Problems:
+TODO: Rearrange an array with O(1) extra space
+
+Topic: Stacks/Queues
+
+Problems:
+1. Queue Reversal
+2. Reverse First K elements of Queue
+3. Reverse a string using Stack
+4. Stack designer
+5. Get min at pop (compare at each step and push the min)
+
+TODO:
+Sort a stack in C++
+
+#DATE 02/03/2021 11:15 AM - 12:15 PM
+
+Topic: Stacks/Queues
+
+Problems:
+
+1. Next Greater Element
+vector<long long> nextLargerElement(vector<long long> arr, int n){
+    // Your code here
+    stack<long long> s;
+    vector<long long> output;
+    for(auto it=arr.rbegin();it!=arr.rend();++it){
+        if(s.empty()){
+            output.push_back(-1);
+            s.push(*it);
+        }
+        else{
+            while(!s.empty() && *it>s.top()){
+                s.pop();
+            }
+            if(s.empty()){
+                output.push_back(-1);
+                s.push(*it);
+            }
+            else{
+                output.push_back(s.top());
+                s.push(*it);
+            }
+        }
+    }
+    reverse(output.begin(),output.end());
+    return output;
+}
+
+#DATE 03/03/2021 11:00 AM - 12:00 PM
+
+Topic: Stacks/Queues
+
+Problems:
+
+1. Remove repeated digits in a given number
+2. Generate Binary Numbers
+3. Smallest number on left (Same as next higher number)
+4. Reverse each word in a given string (Use stacks in C++)
+
+#DATE 05/03/2021 11:00 AM - 12:00 PM
+
+Topic: Stack/Queues
+
+Problems:
+1. Min sum formed by digits
+2. Ticket Counter
+3. GeeksforGeeks
+4. Queue using stack
+
+#DATE 06/03/2021
+
+Problems:
+1. Pairwise Consecutive Elements
+2. Check if two arrays are equal or not
+3. Non-Repeating Element
+
+#DATE 07/03/2021
+
+Problems:
+1. Second most repeated string in a sequence
+
+#DATE 08/03/2021 11:00 AM - 12:00 PM
+
+Topic: Maps
+
+Problems:
+1. Print Anagrams Together
+2. Check if a string is Isogram or not
+3. Minimum indexed character
+4. Twice Counter
+5. Subarray with 0 sum
+
+#DATE 09/03/2021 11:00 AM - 12:00 PM
+
+Topic: Maps
+
+Problems:
+1. Smallest number repeating K times
+2. Largest subarray with 0 sum
+3. Remove duplicates in small prime array
+4. Sum Indexes
+5. Count pair sum
+6. Count pairs with given sum
+
+# DATE 10/03/2021 11:10 AM - 12:10 PM
+
+Topic: Maps
+
+Problems:
+1. Grouping values
+
+# DATE 11/03/2021 11:10 AM - 12:10 PM
+
+Topic: Maps
+
+Problems:
+1. Match specific pattern
+2. Max distance between same elements / Maximum number of characters between any two same character
+
+# DATE 12/03/2021 11:10 AM - 12:10 PM
+
+Topic: Maps
+
+Problems:
+1. Completing tasks
+2. Array Subset of another array
+
+TODO: HEAPS - Maximum distinct elements after removing K elements
+
+#DATE 15/03/2021 10:50 AM - 12:00 PM
+
+Topic: Trees
+
+Problems:
+1. Inorder Traversal (Iterative)
+2. Inorder Traversal (Recursive)
+3. Preorder traversal (Iterative)
+4. Preorder traversal (Recursive)
+
+
+#DATE 16/03/2021 10:50 AM - 12:00 PM
+
+Topic: Trees
+
+Problems:
+1. Postorder Traversal (Recursive)
+2. Level order traversal  (BFS)
+3. Postorder Traversal (Iterative)
+4. Height of Binary Tree
+5. Mirror Tree ( Can use inorder traveral with stack or
+void mirror(Node* node)
+ {
+  // code here
+  if(node == NULL){
+      return;
+  }
+
+  mirror(node->left);
+  mirror(node->right);
+  swap(node->left, node->right);
+ }
+ )
+ 6. Count Leaves in Binary Tree
+ 7. Minimum element in BST
+ 8. Size of Binary Tree
+
+ #DATE 17/03/2021
+
+ Topic: Trees
+
+ Problems:
+ 1. K distance from root
+ 2. Sum of Binary Tree
+ 3. Sum of Leaf Nodes
+ 4. Odd even level difference
+ 5. Max Level Sum in Binary Tree
+ 6. Minimum Depth of a Binary Tree
+
+ #DATE 18/03/2021 11:00 AM - 12:00 PM
+
+ Topic: Trees
+
+ Problems:
+ 1. Vertical sum
+ 2. Root to leaf paths sum
+ 3. Number of root to leaf paths
+
+ #DATE 19/03/2021 11:10 AM - 12:10 PM
+
+ Topic: Trees
+
+ Problems:
+ 1. Children Sum Parent
+ 2. Remove Half Nodes
+
+ # DATE 22/03/2021 11:10 AM - 12:10 PM
+
+ Topic: Sorting
+
+ Problems:
+ 1. Sort an array of 0s, 1s and 2s
+ 2. Maximum Possible Sum of Products
+ 3. Floor in a Sorted Array
+
+THEORY: https://www.interviewbit.com/tutorial/sorting-algorithms/
+Bubble Sort
+Insertion Sort
+Quick Sort - 22/03/2021
+Merge Sort
+Heap Sort
+
+# DATE 23/03/2021 11:10 AM - 12:10 PM
+
+Topic: Sorting
+Problems:
+1. Maximum product of two numbers
+2. Sort in specific order
+3. Alternative Sorting
+4. Sorting Elements of an Array by Frequency
+5. Minimize sum of alternate product
+
+# DATE 25/03/2021 11:00 AM - 12:00 PM
+
+Topic: Sorting
+
+Problems:
+1. Fitting The Array
+2. Triplet Family
+3. Sorting all array elements except one
+4. Rope Cutting ( Sort and if the difference is greater than 0, then from that point till end will be an entry
+and make this number as the new minimum. This is only true when sorted)
+
+#DATE 26/03/2021 11:05 AM - 12:05 PM
+
+Topic: Sorting
+
+Problems:
+1. Two numbers with sum closest to zero
+
+
+** DYNAMIC PROGRAMMING **
+
+Aditya Verma: https://www.youtube.com/c/AdityaVermaTheProgrammingLord/playlists
+Back to Back SWE: https://www.youtube.com/c/BackToBackSWE/playlists
+Steps to solve a DP:
+1) Identify if it is a DP problem
+2) Decide a state expression with
+   least parameters
+3) Formulate state relationship
+4) Do tabulation (or add memoization)
+
+#DATE 27/03/2021
+
+Problems:
+1. Search in a row-column sorted Matrix
+2. Parenthesis Checker
+3. Sorting Elements of an Array by Frequency
+4. Minimum Distinct Ids
+5. First Repeating Element
+
+Variations:
+1. 0-1 Knapsack problem (6)
+ - Subset Sum
+ - Equal Sum Partition
+ - Count Of Subset Sum
+ - Minimum Subset Sum Difference
+ - Target Sum
+ - Number Of Subset With Given Difference
+
+2. unbounded Knapsack problem (5)
+3. Fibonacci (7)
+4. LCS (15)
+5. LIS (10)
+6. Kadane's algorithms (6)
+7. Matrix Chain Multiplication (7) **IMPORTANT
+8. DP on Trees (4)
+9. DP on Grid (14)
+10. Others (5)
+
+#DATE 29/03/2021
+
+Topic: Dynamic Programming
+
+Steps to solve a DP:
+1) Identify if it is a DP problem
+2) Decide a state expression with
+   least parameters
+3) Formulate state relationship
+4) Do tabulation (or add memoization)
+
+To accept inputs till EOF:
+	1. while(!cin.eof())
+  2. while(cin>>input)
+
+Resource for DP: https://www.youtube.com/c/AdityaVermaTheProgrammingLord/playlists
+Types of DP (PARENT PROBLEMS - For Variations):
+
+  1. 0-1 Knapsack problem (6)
+  2. unbounded Knapsack problem (5)
+  3. Fibonacci (7)
+  4. LCS (15)
+  5. LIS (10)
+  6. Kadane's algorithms (6)
+  7. Matrix Chain Multiplication (7) **IMPORTANT
+  8. DP on Trees (4)
+  9. DP on Grid (14)
+  10. Others (5)
+
+Variations:
+1. 0-1 Knapsack problem (6)
+ 1 Subset Sum
+ 2 Equal Sum Partition
+ 3 Count Of Subset Sum
+ 4 Minimum Subset Sum Difference
+ 5 Target Sum
+ 6 Number Of Subset With Given Difference
+
+2. unbounded Knapsack problem (5)
+ 1 Rod Cutting
+ 2 Coin Change I (Maximum number of ways)
+ 3 Coin Change II (Minimum number of Coins)
+ 4 Maximum Ribbon Cut
+
+3. Fibonacci (7)
+4. LCS (15)
+ 1 Longest Common Substring (LC-substring)
+ 2 Print LCS
+ 3 Shortest Common Supersequence (SCS)
+ 4 Print SCS
+ 5 Minimum number of insertions and deletions from a->b (Edit distance)
+ 6 Longest Repeating Subsequence
+ 7 Length of longest Subsequence of which is a substring in b
+ 8 Subsequence pattern matching
+ 9 Count how many times a appears as Subsequence in b
+ 10 Longest Palindromic Subsequence
+ 11 Longest Palindromic Substring
+ 12 Count of Palindromic substring
+ 13 minimum number of deletions to make it a Palindrome
+ 14 minimum number of insertions to make it a Palindrome
+
+5. LIS (10)
+6. Kadane's algorithms (6)
+7. Matrix Chain Multiplication (7) **IMPORTANT
+8. DP on Trees (4)
+9. DP on Grid (14)
+10. Others (5)
+
+Problems:
+1. Bytelandian gold coins (memoization)
+2. 0-1 Knapsack Problem (Recursive)
+3. 0 - 1 Knapsack Problem (memoization)
+
+#DATE 30/03/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problem:
+1. 0 - 1 Knapsack Problem (Bottom-Up)
+
+#DATE 31/03/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. Subset Sum Problem (Recursive)
+2. Subset Sum Problem (Bottom Up)
+
+#DATE 01/04/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. Partition Equal Subset Sum (Bottom Up from subset sum)
+2. 1. Two Sum (Leet code)
+
+#DATE 02/04/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. Count of subset sum (Bottom Up)
+2. 1498. Number of Subsequences That Satisfy the Given Sum Condition
+3. 7. Reverse Integer
+
+#DATE 03/04/2021
+
+Topic: Dynamic Programming
+
+Problems:
+1. 72. Edit Distance (Hard)
+2. Minimum sum partition (Hard)
+3. 698. Partition to K Equal Sum Subsets (Medium)
+4. 300. Longest Increasing Subsequence (Medium)
+5. 674. Longest Continuous Increasing Subsequence
+
+#DATE 04/04/2021
+
+Topic: Dynamic Programming
+
+1. Count number of subsets with a given difference
+2. 494. Target Sum (Same as above) (Medium)
+  changes --> consider 0's
+  count the number of zeros
+  if a zero appears while calculating, do not consider it as we will add them later on
+  at the end multiply the answer by 2^count to include the permutations possible with 0 added
+3. Unbounded Knapsack (It is 0-1 Knapsack where if you have a choice to take, you can take again t[i-1]->t[i])
+4. Rod Cutting
+5. Coin Change (Maximum number of ways)
+6. 322. Coin Change (Minimum number of ways)
+7. Maximise The Cut Segments (Same as 322. coin change)
+
+#DATE 05/04/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. 1143. Longest Common Subsequence (Recursive)
+2. 1143. Longest Common Subsequence (Bottom-up DP)
+
+#DATE 06/04/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. Longest Common Substring
+2. Printing LCS
+
+#DATE 07/04/2021 11:00 AM - 12:00 PM
+
+Topic: Dynamic Programming
+
+Problems:
+1. Shortest Common Super sequence
+2. 583. Delete Operation for Two Strings | 25 Minimum Number of Insertion and Deletion to convert String a to String b
+3. 516. Longest Palindromic Subsequence
+
+
+#DATE 08/04/2021
+
+Topic: Dynamic Programming
+
+Problems:
+1. Minimum Deletions | 28 Minimum number of deletion in a string to make it a palindrome
+2. 1092. Shortest Common Supersequence
+3. 1312. Minimum Insertion Steps to Make a String Palindrome
+4. 30 Longest Repeating Subsequence
+5. 392. Is Subsequence
+
+#DATE 09/04/2021
+
+Topic: Dynamic Programming on Trees
+1. Diameter of a Binary Tree
+2. Maximum path sum from any node to any
+3. Maximum path sum from leaf to leaf
+4. Diameter N-ary Tree
+
+Problems:
+1. 543. Diameter of Binary Tree
+2. 124. Binary Tree Maximum Path Sum
+
+
+TODO: Find the maximum path sum between two leaves of a binary tree
+
+#DATE 12/04/2021
+
+Topic: Heaps
+
+Problems:
+1. 215. Kth Largest Element in an Array
+2. Kth smallest element
+3. Nearly Sorted Algorithm / K Sorted Array
+4. 658. Find K Closest Elements (Using multimap{296 ms, faster than 5.27% | 48.7 MB, less than 6.64%} | Heaps)
+
+#DATE 13/04/2021
+
+Topic: Heaps
+
+Problems:
+1. 347. Top K Frequent Elements
+2. 451. Sort Characters By Frequency
+3. 9. Palindrome Number
+4. 100. Same Tree
+5. 973. K Closest Points to Origin
+6. Minimum Cost of ropes
+
+#DATE 14/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. 704. Binary Search
+2. 34. Find First and Last Position of Element in Sorted Array
+3. Number of occurrence
+
+#Date 15/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. 153. Find Minimum in Rotated Sorted Array
+2. 33. Search in Rotated Sorted Array
+
+#DATE 16/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. Floor in a Sorted Array
+2. Ceil of an element in a Sorted Array
+3. 744. Find Smallest Letter Greater Than Target
+
+#DATE 17/04/2021
+
+Topic: Leetcode
+
+Problems:
+1. 26. Remove Duplicates from Sorted Array
+2. 53. Maximum Subarray
+3. 35. Search Insert Position
+4. 112. Path Sum
+5. 169. Majority Element
+6. 226. Invert Binary Tree
+7. 242. Valid Anagram
+8. 257. Binary Tree Paths
+9. 235. Lowest Common Ancestor of a Binary Search Tree
+10. 389. Find the Difference
+11. 136. Single Number
+12. 268. Missing Number
+13. 287. Find the Duplicate Number
+14. 387. First Unique Character in a String
+15. 409. Longest Palindrome
+16. 645. Set Mismatch
+
+#DATE 18/04/2021
+
+Topic: Leetcode
+
+Problems:
+1. 448. Find All Numbers Disappeared in an Array
+2. 819. Most Common Word
+3. Fibonacci Sequence
+4. 1047. Remove All Adjacent Duplicates In String
+
+#DATE 19/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. 13 Find position of an element in an Infinite Sorted Array
+2. 14 Index of First 1 in a Binary Sorted Infinite Array
+3. 15 Minimum Difference Element in a Sorted Array
+4. 1200. Minimum Absolute Difference (nlogn)
+
+#DATE 20/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. 162. Find Peak Element
+2. 852. Peak Index in a Mountain Array
+3. 18 Find maximum element in Bitonic Array (Same as 162. Find Peak Element)
+4. 19 Search An Element in Bitonic Array (Same as Find maximum element in Bitonic Array with BS from [0,max) or (max,n-1])
+    You are dividing the array into two and checking which area this might be in and applying BS on that part.
+5. 104. Maximum Depth of Binary Tree
+6. 20. Valid Parentheses
+
+#DATE 21/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. Search in a matrix
+
+TODO ON BINARY SEARCH:
+Book Allocation Problem (GFG) (DONE)
+Aggressive cow (spoj)
+Prata and roti (spoj)
+EKO (spoj)
+Google kickstart A Q-3 2020
+1482 Minimum Number of Days to Make m Bouquets (DONE)
+1283 Find the Smallest Divisor Given a Threshold (DONE)
+1231 Divide Chocolate (NEED SUBSCRIPTION)
+875 Koko Eating Bananas (DONE)
+774 Max Distance to Gas Station (NEED SUBSCRIPTION)
+410 Split Array Largest Sum (DONE)
+1011. Capacity To Ship Packages Within D Days (DONE)
+https://www.geeksforgeeks.org/painters-partition-problem/
+https://www.geeksforgeeks.org/allocate-minimum-number-pages/ (DONE)
+
+#DATE 22/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. Allocate minimum number of pages
+2. 1011. Capacity To Ship Packages Within D Days
+3. 1482. Minimum Number of Days to Make m Bouquets
+4. 1283. Find the Smallest Divisor Given a Threshold
+
+#DATE 23/04/2021 11:00 AM - 12:00 PM
+
+Topic: Binary Search
+
+Problems:
+1. 875. Koko Eating Bananas
+2. 410. Split Array Largest Sum
+3. The Painter's Partition Problem
+
+TODO ON STACKS:
+1. Nearest Greater to Left
+2. Nearest Greater to Right
+3. Nearest Smaller to Left
+4. Nearest Smaller to Right
+5. Stock Span Problem
+6. Maximum Area of Histogram
+7. Max area of rectangle in Binary Matrix
+8. Rain Water Trapping
+9. Implementing a min stack (With extra space / Without extra space)
+10. Implementing stack using Heap
+11. The Celebrity Problem
+12. Longest Valid parenthesis
+13. Iterative Tower of Hanoi
+
+
+#DATE 24/04/2021
+
+Topic: Leetcode
+
+Problems:
+1. 66. Plus One
+2. 283. Move Zeroes
+3. 463. Island Perimeter
+4. 500. Keyboard Row
+5. 605. Can Place Flowers
+
+#DATE 25/04/2021
+
+Topic: Leetcode
+
+Problems:
+1. 575. Distribute Candies
+2. 746. Min Cost Climbing Stairs
+3. 724. Find Pivot Index
+4. 70. Climbing Stairs
+5. 771. Jewels and Stones
+6. 896. Monotonic Array
+7. 1051. Height Checker
+8. 1550. Three Consecutive Odds
+
+#DATE 26/04/2021 11:00 AM - 12:00 PM
+
+Topic: Stacks
+
+Problems:
+1. Next Greater Element
+2. 3 NGL | Nearest Greater to Left
+
+#DATE 27/04/2021 11:00 AM - 12:00 PM
+
+Topic: Stacks
+
+Problems:
+1. 4 NSL | NEAREST SMALLER TO LEFT
+2. Stock span problem
+
+#DATE 29/04/2021 11:00 AM - 12:00 PM
+
+Topic: Stacks
+
+Problems:
+1. Maximum Rectangular Area in a Histogram (Get the values of left and right correctly while calculating area)
+Same as 84. Largest Rectangle in Histogram (HARD)
+
+#DATE 30/04/2021
+
+Topic: Stacks
+
+Problems:
+1. 85. Maximal Rectangle (HARD)
+2. 84. Largest Rectangle in Histogram (HARD)
+3. 42. Trapping Rain Water (HARD) - (Store the maximum_left and maximum_right in arrays before starting calculations)
+4. 155. Min Stack (With 2 stacks | With O(1) Space, issues with int overflow, but concept is understood)
+
+#DATE 03/05/2021
+
+Topic: Sliding Window
+
+TODO:
+i. Fixed Size Window
+
+1. Maximum/Minimum Subarray of Size K (DONE)
+2. 1st negative in every window size of K (DONE)
+3. Count occurrences of anagrams (DONE)
+4. Max of all subarray of size k (DONE)
+5. Max of Min for every window size
+
+ii. Variable Size Window
+
+1. Largest/Smallest subarray with sum K
+2. Largest subarray  of K distinct characters (DONE)
+3. Length of largest substring with no repeating characters (DONE)
+4. Pick toy
+5. Minimum window substring
+
+Problems:
+1. Max Sum Subarray of size K
+
+#DATE 04/05/2021 11:00 AM - 12:00 PM
+
+Topic: Sliding Window
+
+Problems:
+1. First negative integer in every window of size k
+2. 438. Find All Anagrams in a String | Count occurrences of anagrams
+
+#DATE 05/05/2021 11:00 AM - 12:00 PM
+
+Topic: Sliding Window
+
+Problems:
+1. 239. Sliding Window Maximum | Maximum of all subarrays of size k
+
+#DATE 06/05/2021 11:00 AM - 12:00 PM
+
+Topic: Sliding Window
+
+#DATE 07/05/2021 11:00 AM - 12:00 PM
+
+Topic: Sliding Window
+
+Problems:
+1. Longest K unique characters substring
+2. 3. Longest Substring Without Repeating Characters
+
+#DATE 08/05/2021
+
+Topic: Sliding Window
+
+Problems:
+1. 904. Fruit Into Baskets
+
+TODO:
+https://leetcode.com/problems/minimum-window-substring/solution/ (NEED TO UNDERSTAND THE CODE)
+https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+https://leetcode.com/problems/subarray-sum-equals-k/
+https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+#DATE 09/05/2021
+
+Topic: Recursion
+
+TODO:
+1. Print 1 to n / n to 1 numbers (DONE)
+2. sort an array (DONE)
+3. sort a stack (DONE)
+4. Delete middle element in a stack (DONE)
+5. Remove duplicates from a string (DONE)
+6. Count the number of occurrences
+7. Subset (DONE)
+8. Permutations with spaces (DONE)
+9. Josephus problem (DONE)
+
+EXTENDED:
+1. Binary string with number of 1's greater than the number of 0's in prefix (DONE)
+2. Generate Balanced Parenthesis (DONE)
+
+Problems:
+1. Print 1 to n / n to 1 numbers
+
+#DATE 10/05/2021 7:15 PM
+
+Topic: Recursion
+
+Problems:
+1. 912. Sort an Array
+2. Sort a stack
+3. Delete middle element of a stack
+4. Reverse a stack:
+class Solution
+{
+    public:
+
+    void insert(stack<int> &s, int value){
+        if(s.empty()){
+            s.push(value);
+            return;
+        }
+        int temp = s.top();
+        s.pop();
+        insert(s,value);
+        s.push(temp);
+    }
+    void reverse(stack<int> &s){
+        if(s.empty() || s.size() == 1){
+            return;
+        }
+        int value = s.top();
+        s.pop();
+        reverse(s);
+        insert(s,value);
+    }
+    //Function to delete middle element of a stack.
+    void deleteMid(stack<int>&s, int sizeOfStack)
+    {
+        // code here..
+        reverse(s);
+    }
+};
+
+#DATE 11/05/2021 7:15 PM
+
+Topic: Recursion
+
+Problems:
+1. 779. K-th Symbol in Grammar
+2. Tower of Hanoi
+3. Power Set Using Recursion
+
+
+#DATE 12/05/2021 7:15 PM
+
+Topic: Recursion
+
+Problems:
+1. 90. Subsets II | https://practice.geeksforgeeks.org/problems/subsets-1587115621/1 (TLE ON CODE WRITTEN FOR GFG) - SORT
+2. 78. Subsets - NO NEED TO SORT
+3. Permutation with Spaces
+
+#DATE 14/05/2021
+
+Topic: Recursion
+1. Permute a string by changing case | 784. Letter Case Permutation
+2. 22. Generate Parentheses
+3. Print N-bit binary numbers having more 1s than 0s
+4. Find the Safe Position | Josephus' problem
+
+#DATE 15/05/2021
+
+Topic: Problems
+
+TODO:
+-Swap Sort
+-Sliding Window
+-Missing and Duplicate number from 1 to N
+-Two Pointers and Three Pointers
+-Query Processing Problems
+
+Problems:
+1. Find Missing And Repeating
+
+#DATE 16/05/2021 7:15 PM
+
+Topic: Dynamic Programming | Matrix Chain Multiplication
+
+Problems in Topic:
+1. Evaluate Expression to True | Boolean Paranthesization
+2. Min/Max Value of an Expression
+3. Palindrome Partitioning
+4. Scramble String
+5. Egg Dropping Problem
+
+FORMAT:
+
+int solve(int arr[]/string str, int i, int j){
+  // Base condition, can change
+  if(i>j){
+    return 0;
+  }
+
+  // Breaking K at every step
+  for(int k=i;k<j;++k){
+    int tempans = solve(arr,i,k) (some relation) solve(arr,k+1,j);
+    ans = fucn(tempans);
+  }
+  return ans;
+}
+
+Problem:
+1. 1010. Pairs of Songs With Total Durations Divisible by 60 (Random)
+2. MCM Recursive Approach
+
+#DATE 18/05/2021 7:15 PM
+
+Topic: Dynamic Programming | MCM
+
+Problems:
+1. Matrix Chain Multiplication (Memoized)
+2. Palindromic patitioning (O(N^3) SOLUTION)
+
+TODO:
+1. Palindromic patitioning
+2. 132. Palindrome Partitioning II (NEED O(N^2) SOLUTION FOR THIS)
+3. 131. Palindrome Partitioning (DIFFERENT APPROACH)
+
+#DATE 19/05/2021 7:15 PM
+
+Topic: Dynamic Programming | MCM
+
+Problems:
+1. Boolean Parenthesization (HARD)
+
+#DATE 20/05/2021 7:15 PM
+
+Topic: Dynamic Programming | MCM
+
+Problems:
+1. 87. Scramble String
+
+
+#DATE 21/05/2021 7:15 PM
+
+Topic: Dynamic Programming | MCM
+
+Problems:
+1. 887. Super Egg Drop
+
+#DATE 24/05/2021 7:15 PM
+
+Topic: Graph Theory
+https://www.youtube.com/watch?v=09_LlHjoEiY&t=19s&ab_channel=freeCodeCamp.org
+
+CODE:
+https://github.com/williamfiset/algorithms
+
+*Course Contents*
+- (0:00:00) Graph Theory Introduction
+- (0:13:53) Problems in Graph Theory
+- (0:23:15) Depth First Search Algorithm
+- (0:33:18) Breadth First Search Algorithm
+- (0:40:27) Breadth First Search grid shortest path
+- (0:56:23) Topological Sort Algorithm
+- (1:09:52) Shortest/Longest path on a Directed Acyclic Graph (DAG)
+- (1:19:34) Dijkstra's Shortest Path Algorithm
+- (1:43:17) Dijkstra's Shortest Path Algorithm | Source Code
+- (1:50:47) Bellman Ford Algorithm
+- (2:05:34) Floyd Warshall All Pairs Shortest Path Algorithm
+- (2:20:54) Floyd Warshall All Pairs Shortest Path Algorithm | Source Code
+- (2:29:19) Bridges and Articulation points Algorithm
+- (2:49:01) Bridges and Articulation points source code
+- (2:57:32) Tarjans Strongly Connected Components algorithm
+- (3:13:56) Tarjans Strongly Connected Components algorithm source code
+- (3:20:12) Travelling Salesman Problem | Dynamic Programming
+- (3:39:59) Travelling Salesman Problem source code | Dynamic Programming
+- (3:52:27) Existence of Eulerian Paths and Circuits
+- (4:01:19) Eulerian Path Algorithm
+- (4:15:47) Eulerian Path Algorithm | Source Code
+
+TODO:
+- (4:23:00) Prim's Minimum Spanning Tree Algorithm
+- (4:37:05) Eager Prim's Minimum Spanning Tree Algorithm
+- (4:50:38) Eager Prim's Minimum Spanning Tree Algorithm | Source Code
+- (4:58:30) Max Flow Ford Fulkerson | Network Flow
+- (5:11:01) Max Flow Ford Fulkerson | Source Code
+- (5:27:25) Unweighted Bipartite Matching | Network Flow
+- (5:38:11) Mice and Owls problem | Network Flow
+- (5:46:11) Elementary Math problem | Network Flow
+- (5:56:19) Edmonds Karp Algorithm | Network Flow
+- (6:05:18) Edmonds Karp Algorithm | Source Code
+- (6:10:08) Capacity Scaling | Network Flow
+- (6:19:34) Capacity Scaling | Network Flow | Source Code
+- (6:25:04) Dinic's Algorithm | Network Flow
+- (6:36:09) Dinic's Algorithm | Network Flow | Source Code
+
+Graphs.txt for more notes.
+
+Problems:
+1. DFS of Graph  | DFS: https://www.youtube.com/watch?v=TIbUeeksXcI
+
+
+#DATE 25/05/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. 343. Integer Break
+2. BFS of graph
+
+
+#DATE 26/05/2021
+
+Topic: Graphs
+
+Problems:
+1. 1091. Shortest Path in Binary Matrix
+
+#DATE 26/05/2021
+
+Steps in Backtracking:
+- Choices
+- Constraints
+- Goal
+(or)
+- Choose
+- Explore
+- Unchoose
+
+2D VECTOR INITIALIZATION:
+#include<iostream>
+int main(){
+    int n = 5;
+
+    vector<vector<int>> vec( n, vector<int> (n, 0));
+
+    return 0;
+}
+
+Problems:
+1. 51. N-Queens
+2. 52. N-Queens II
+3. 567. Permutation in String
+
+#DATE 28/05/2021
+
+Problems:
+1. 46. Permutations
+2. 47. Permutations II
+
+#DATE 29/05/2021
+
+Problems:
+1. 789. Escape The Ghosts
+2. 79. Word Search
+3. 198. House Robber
+4. 127. Word Ladder
+
+#DATE 31/05/2021 7:30 PM
+
+Topic: Backtracking
+
+Problems:
+1. 78. Subsets | 90. Subsets II (Backtracking appraoch)
+2. 131. Palindrome Partitioning
+
+#DATE 01/06/2021 7:15 PM
+
+Topic: Backtracking
+
+Problems:
+1. 17. Letter Combinations of a Phone Number
+2. 1849. Splitting a String Into Descending Consecutive Values
+
+
+#DATE 02/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Topological sort
+
+TODO:
+Shortest/Longest Path on a DAG
+
+Shortest path on a DAG- Use the algorithm
+Longest path on a DAG:
+1. Multiply all edges by -1
+2. Find Shortest distance
+3. Multiply all edges by -1 again to find the Longest distance
+
+#DATE 03/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Learnt Lazy Dijkstras
+
+#DATE 04/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Coded Dijkstras algorithm
+
+#DATE 07/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Bellman-Ford Algorithm
+2. Floyd Warshall
+
+#DATE 14/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Bridges in Graphs
+2. Articulation Points in Graphs
+https://www.hackerearth.com/practice/algorithms/graphs/articulation-points-and-bridges/tutorial/
+
+#DATE 15/06/2021 7:15 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Tarjan's algorithm
+https://practice.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1#
+2. Implement An LRU Cache - The LRU Cache Eviction Policy ("LRU Cache" on LeetCode)
+https://www.youtube.com/watch?v=S6IfqDXWa10&ab_channel=BackToBackSWE
+- To Implement:
+1. Learn Linked Lists
+2. Learn Types of Linked Lists (Single, Double-linked, Circular)
+3. Learn Operations on the Linked Lists (Addition, Deletion, Update)
+
+#DATE 16/06/2021 7:30PM
+
+Topic: Graph Theory
+
+Problems:
+1. Travelling Salesman Problem (Basic Approach)
+https://www.youtube.com/watch?v=JE0JE8ce1V0&ab_channel=CodingBlocks
+Need to understand how bit manipulation works.
+
+#DATE 17/06/2021 7:30 PM
+
+Topic: Graph Theory
+
+Problems:
+1. Eulerian Path | Eulerian Circuit
+Only learnt the algorithm and Psuedo code.
+
+#DATE 18/06/2021
+
+Topic: Graph Theory
+
+Problems:
+1. Theory for Prim's Algorithm
+
+TODO: Code for Prim's Algorithm
+
+
+#DATE 21/06/2021
+
+Topic: Linked Lists
+
+Goal: Implement LRU Cache
+
+GFG:
+https://www.geeksforgeeks.org/data-structures/linked-list/
+
+Part 31 onwards: Linked Lists
+https://www.youtube.com/watch?v=b5QR4AmrspU&list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y&index=32&ab_channel=NesoAcademyNesoAcademyVerified
+
+Leetcode:
+https://leetcode.com/tag/linked-list/
+
+Types of Linked Lists:
+
+1. Single Linked List (Navigation is forward only)
+2. Doubly Linked List (Navigation can be done in both directions)
+3. Circular Linked List (Last element is linked to the first element)
+
+Representation of Linked List:
+[Int | Pointer] -> [Int | Pointer] -> [Int | Pointer] -> [Int | Pointer]
+
+Syntax: (Build on this syntax)
+
+struct node{
+ int data;
+ struct node* next;
+};
+
+Problems:
+1. Print Linked List elements
+2. Linked List Insertion
+3. Delete a Node in Single Linked List
+4. Count nodes of linked list (Iterative | Recursive)
+5. Node at a given index in linked list
+6. Nth node from end of linked list
+
+Currently at:
+Singly Linked List :
+10. Node at a given index in linked list
+
+#DATE 22/06/2021
+
+Topic: Linked Lists
+
+Problems:
+1. Finding middle element in a linked list
+2. Occurence of an integer in a Linked List
+3. Detect Loop in linked list
+4. Find length of Loop
+5. Remove duplicate element from sorted Linked List
+6. Remove duplicates from an unsorted linked list
+TODO:
+Check if Linked List is Palindrome | https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
+This will involve reversing a Linked List
+
+Currently at:
+17. Remove duplicates from an unsorted linked list
+
+#DATE 23/06/2021
+
+Topic: Linked Lists
+
+Problems:
+1. Intersection of two sorted Linked lists
+2. Intersection Point in Y Shapped Linked Lists
+a. (Solution found in Time O(N+M) and space O(N+M)) | Find in space O(1)
+b. Solution in O(1) involves manipulating the data with 2 passes.
+3. Segregate even and odd nodes in a Link List
+4. Reverse a linked list
+
+Recursive approach:
+struct Node* reverseList(struct Node *head)
+    {
+        // code here
+        // return head of reversed list
+        if(head == nullptr || head->next == nullptr){
+            return head;
+        }
+        Node* reversed_list = reverseList(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+        return reversed_list;
+    }
+
+TODO:
+1. Pairwise swap elements of a given linked list
+2. QuickSort on Singly Linked List
+3. Start with Doubly Linked List section
+
+#DATE 24/06/2021
+
+Topic: Linked Lists
+
+Problems:
+1. Check if Linked List is Palindrome
+2. 234. Palindrome Linked List
+3. 2. Add Two Numbers
+
+#DATE 25/06/2021
+
+Topic: Linked Lists
+
+TODO:
+https://leetcode.com/problems/lru-cache/ [DONE]
+https://leetcode.com/problems/lfu-cache/
+
+Problems:
+1. Doubly linked list Insertion at given position
+2. Delete node in Doubly Linked List
+3. Reverse a Doubly Linked List | https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem
+4. Possibly wrote a problem for Swap Kth node for a Doubly linked list.
+5. 1721. Swapping Nodes in a Linked List
+
+NOTE: Two ways to do it:
+1. Swap values <- Easy way | Do not be an idiot and follow step 2 unless asked. Always swap values
+2. Swap actual Nodes <- Hard way | Has a bunch of edge cases to check while swapping nodes and it's pointers.
+
+#DATE 26/06/2021
+
+Topic: Linked Lists
+
+Problems:
+1. 146. LRU Cache
+
+#DATE 28/06/2021
+
+Topic: Linked Lists
+
+Problems:
+1. 138. Copy List with Random Pointer
+2. Circular Linked List Traversal
+3. Check If Circular Linked List
+4. Split a Circular Linked List into two halves
+5. 876. Middle of the Linked List
+6. 19. Remove Nth Node From End of List
+
+#DATE 29/06/2021 7:20 PM
+
+Topic: Leetcode
+
+Resource: https://www.youtube.com/watch?v=h9iTnkgv05E&list=PLot-Xpze53ldBT_7QA8NVot219jFNr_GI&ab_channel=NeetCode
+
+Problems:
+1. 127. Word Ladder
+
+TODO:
+https://leetcode.com/problems/course-schedule/submissions/
+How to determine a Cycle in a directed graph.
+
+#DATE 30/06/2021
+
+Topic: Leetcode
+
+Problems:
+1. 207. Course Schedule (Cycle Approach)
+2. 210. Course Schedule II (Topological Sorting)
+
+#DATE 01/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 200. Number of Islands
+
+#DATE 02/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 133. Clone Graph
+2. 417. Pacific Atlantic Water Flow (Try and optimise)
+
+#DATE 05/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 743. Network Delay Time
+2. 79. Word Search
+3. 463. Island Perimeter (Using  DFS)
+
+
+#DATE 08/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 1466. Reorder Routes to Make All Paths Lead to the City Zero
+NOTE: (DFS from root and check edges which are opposite and add count) | Use sets and hashmaps for edges and neighbors
+
+2. 684. Redundant Connection (UnionFind Algorithm)
+class Solution {
+public:
+
+    int find(int n, vector<int> &parent){
+        int p = parent[n];
+        while(p != parent[p]){
+            parent[p] = parent[parent[p]];
+            p = parent[p];
+        }
+        return p;
+    }
+
+    bool un(int n1, int n2,vector<int> &parent, vector<int> &rank){
+        int p1 = find(n1,parent);
+        int p2 = find(n2,parent);
+        if(p1 == p2){
+            return false;
+        }
+        if(rank[p1] > rank[p2]){
+            parent[p2] = p1;
+            rank[p1] += rank[p2];
+        }else{
+            parent[p1] = p2;
+            rank[p2] += rank[p1];
+        }
+        return true;
+    }
+
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        vector<int> parent;
+        vector<int> rank;
+
+        for(int i=0;i!=edges.size()+1;++i){
+            parent.push_back(i);
+            rank.push_back(1);
+        }
+
+        for(auto i=edges.begin();i!=edges.end();++i){
+            vector<int> temp = *i;
+            int n1 = temp[0];
+            int n2 = temp[1];
+            if(un(n1,n2,parent,rank) == false){
+                return temp;
+            }
+        }
+        vector<int> result;
+        return result;
+    }
+};
+
+#DATE 13/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. Graph Valid Tree - Leetcode 261 | https://www.lintcode.com/problem/178/description
+class Solution:
+    """
+    @param n: An integer
+    @param edges: a list of undirected edges
+    @return: true if it's a valid tree, or false
+    """
+    def validTree(self, n, edges):
+        if not n:
+            return True
+
+        adj = {i:[] for i in range(n)}
+
+        for n1,n2 in edges:
+            adj[n1].append(n2)
+            adj[n2].append(n1)
+
+        visit = set()
+
+        def dfs(i,prev):
+            if i in visit:
+                return False
+
+            visit.add(i)
+
+            for j in adj[i]:
+                if j == prev:
+                    continue
+                if not dfs(j,i):
+                    return False
+            return True
+
+        return dfs(0,-1) and len(visit) == n
+
+Trie:
+https://www.youtube.com/watch?v=zIjfhVPRZCg&ab_channel=HackerRank
+https://www.youtube.com/watch?v=YG6iX28hmd0&ab_channel=GauravSen
+https://www.youtube.com/watch?v=p4kfbNJzftQ&list=PLMCXHnjXnTnuhz60tS7wtCPDzfuPhglpJ&ab_channel=GauravSen
+
+#DATE 14/07/2021
+
+Topic: Leetcode
+
+Problems:
+
+1. 212. Word Search II
+NOTE: Construct a TRIE and do backtracking with DFS for solution
+class Solution {
+public:
+
+    struct Trie{
+        int terminating = 0;
+        Trie *children[26];
+    };
+
+    void insert(Trie *root, string word){
+        Trie* &current = root;
+        for(auto i=word.begin();i!=word.end();++i){
+            if(current->children[*i-'a'] == nullptr){
+                current->children[*i-'a'] = new Trie();
+            }
+            current = current->children[*i-'a'];
+        }
+        current->terminating++;
+    }
+
+    void dfs(int r, int c, vector<vector<char>> &board, string word, Trie* root,
+            set<string> &set_result){
+        if(r<0 || c<0 || r>=board.size() || c>=board[0].size()
+           || board[r][c] == '-' || root->children[board[r][c]-'a'] == nullptr){
+            return;
+        }
+        char temp = board[r][c];
+        word += board[r][c];
+        root = root->children[board[r][c] - 'a'];
+        if(root->terminating != 0){
+            set_result.insert(word);
+        }
+        board[r][c] = '-';
+
+        dfs(r+1,c,board,word,root,set_result);
+        dfs(r-1,c,board,word,root,set_result);
+        dfs(r,c+1,board,word,root,set_result);
+        dfs(r,c-1,board,word,root,set_result);
+
+        board[r][c] = temp;
+    }
+
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
+        set<string> set_result;
+        Trie *root = new Trie();
+        for(auto word=words.begin();word!=words.end();++word){
+            insert(root,*word);
+        }
+
+        int rows = board.size();
+        int cols = board[0].size();
+
+        for(int i=0;i!=rows;++i){
+            for(int j=0;j!=cols;++j){
+                dfs(i,j,board,"",root,set_result);
+            }
+        }
+
+        vector<string> result(set_result.begin(),set_result.end());
+        return result;
+    }
+};
+
+
+/*
+// Sample code to perform I/O:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int num;
+	cin >> num;										// Reading input from STDIN
+	cout << "Input number is " << num << endl;		// Writing output to STDOUT
+}
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
+
+// Write your code here
+#include<bits/stdc++.h>
+
+using namespace std;
+
+void dfs(int current, unordered_map<int, vector<int>> &adj,
+		set<int> &visited){
+
+	//cout<<"current: "<<current<<"\n";
+	visited.insert(current);
+	for(auto i=adj[current].begin();i!=adj[current].end();++i){
+		if(visited.find(*i) == visited.end()){
+			// not visited;
+			dfs(*i,adj,visited);
+		}
+	}
+	}
+int main(){
+	int n;
+	int e;
+	cin>>n>>e;
+	unordered_map<int, vector<int>> adj;
+	for(int i=0;i!=e;++i){
+		int n1;
+		int n2;
+		cin>>n1>>n2;
+		adj[n1].push_back(n2);
+		adj[n2].push_back(n1);
+	}
+	set<int> visited;
+	int count = 0;
+	for(int i=1;i!=n+1;++i){
+		if(visited.find(i) == visited.end()){
+		++count;
+		dfs(i,adj,visited);
+		if(visited.size() == n){
+			cout<<count;
+		}
+		}
+	}
+}
+2. Connected Components in a Graph
+https://www.hackerearth.com/problem/algorithm/connected-components-in-a-graph/
+
+
+TODO: Leetcode 547
+
+#DATE 20/07/2021
+
+Topic: Leetcode
+
+Problem:
+1. 547. Number of Provinces
+2. 217. Contains Duplicate
+3. 219. Contains Duplicate II
+
+TODO:
+https://leetcode.com/problems/contains-duplicate-iii/submissions/
+
+#DATE 21/07/2021
+
+Topic: Lower and Upper bounds
+https://www.youtube.com/watch?v=rXuqUtifDU8&ab_channel=code_report
+
+Lower Bound: first_equal_to_or_greater_than
+Upper Bound: first_greater_than
+
+Topic: Leetcode
+1. 220. Contains Duplicate III
+
+class Solution {
+public:
+    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
+        int n = nums.size();
+        set<long long> st;
+
+        for(int i=0;i!=n;++i){
+            if(st.size()>k){
+                st.erase(nums[i-k-1]);
+            }
+            long long element = (long long)nums[i] - (long long)t;
+            auto it = st.lower_bound(element);
+            if(it != st.end() && abs((long long)nums[i] - (long long)(*it))<=t){
+                return true;
+            }
+            st.insert(nums[i]);
+        }
+        return false;
+    }
+};
+
+
+#DATE 22/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. Alien Dictionary
+https://practice.geeksforgeeks.org/problems/alien-dictionary/1#
+Alien Dictionary - Leetcode 269
+
+NOTE: Post order DFS and create adj list with differing charcaters in the dictionary.
+class Solution{
+    public:
+    string findOrder(string dict[], int N, int K) {
+        //code here
+        //cout<<"WHAT IS HAPPPENING";
+        vector<string> words;
+        for(int i=0;i!=N;++i){
+            words.push_back(dict[i]);
+        }
+        string result = alienOrder(words);
+        return result;
+    }
+
+    void dfs(char current, unordered_map<char,set<char>> &mapping, string &result,
+    set<char> &visited,set<char> &processed,bool &valid){
+        if(visited.find(current) != visited.end()){
+            // already visited
+            valid = false;
+            //cout<<"NOT A VALID ENTRY ON: "<<current<<"\n";
+            return;
+        }
+        if(processed.find(current) != processed.end()){
+            // process already but not a loop;
+            return;
+        }
+
+        visited.insert(current);
+        processed.insert(current);
+        for(auto i=mapping[current].begin();i!=mapping[current].end();++i){
+            // entry present for the current character
+            dfs(*i,mapping,result,visited,processed,valid);
+        }
+        // adding the character post traversal
+        result += current;
+        visited.erase(current);
+    }
+
+    string alienOrder(vector<string> &words) {
+        // Write your code here
+        set<char> all_words;
+        unordered_map<char,set<char>> mapping;
+        int n = words.size();
+        for(int i=0;i!=n-1;++i){
+            string word1 = words[i];
+            string word2 = words[i+1];
+            int size = word1.size();
+
+            for(int j=0;j!=size;++j){
+                if(word1[j] != word2[j]){
+                    // means word1[j] < word2[j]
+                    mapping[word1[j]].insert(word2[j]);
+                    break;
+                }
+            }
+        }
+
+        for(auto i=words.begin();i!=words.end();++i){
+            string temp = *i;
+            for(auto j=temp.begin();j!=temp.end();++j){
+                char tempchar = *j;
+                all_words.insert(tempchar);
+            }
+        }
+        //cout<<"dictionary built: \n";
+        /*for(auto i=mapping.begin();i!=mapping.end();++i){
+            cout<<i->first<<" < ";
+            for(auto j=i->second.begin();j!=i->second.end();++j){
+                cout<<*j<<" ";
+            }
+            //cout<<"\n";
+        }*/
+
+        //cout<<"dfs for all characters:\n";
+        string result = "";
+        bool valid = true;
+        set<char> visited;
+        set<char> processed;
+        for(auto i=all_words.begin();i!=all_words.end();++i){
+            //cout<<"current: "<<*i<<"\n";
+            // not visited;
+            dfs(*i,mapping,result,visited,processed,valid);
+            if(!valid){
+                // not valid;
+                return "";
+            }
+        }
+        reverse(result.begin(),result.end());
+        return result;
+    }
+};
+
+2. 953. Verifying an Alien Dictionary
+
+#DATE 23/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 1584. Min Cost to Connect All Points
+
+PRIMS ALGORITHM:
+class Solution {
+public:
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        int n = points.size();
+        vector<vector<int>> adj(n,vector<int>(n,0));
+
+        for(int i=0;i!=n-1;++i){
+            for(int j=i+1;j!=n;++j){
+                int x1 = points[i][0];
+                int y1 = points[i][1];
+
+                int x2 = points[j][0];
+                int y2 = points[j][1];
+
+                int distance = abs(x1-x2) + abs(y1-y2);
+                adj[i][j] = distance;
+                adj[j][i] = distance;
+            }
+        }
+
+        // start off prim's algorithm
+        queue<int> process;
+        priority_queue<pair<int,int>, vector<pair<int,int>>,
+        greater<pair<int,int>>> minheap;
+        set<int> visited;
+        minheap.push({0,0});
+        int count = 0;
+        while(visited.size() != n){
+            auto current = minheap.top();
+            minheap.pop();
+            //cout<<"\n\nCURRENT NODE: "<<current.second<<"\n";
+            //cout<<"current: {"<<current.first<<","<<current.second<<"}\n";
+            if(visited.find(current.second) != visited.end()){
+                //cout<<"NODE ALREADY VISITED, skipping iteration\n";
+                continue;
+            }
+            // add the node to visit and add count for distance
+            visited.insert(current.second);
+            count = count + current.first;
+
+            //cout<<"count: "<<count<<"\n";
+            // BFS for current node and only add nodes which are not already visited
+            for(int j=0;j!=n;++j){
+                if(visited.find(j) == visited.end()){
+                    // is not already visited
+                    //cout<<"adding: {"<<adj[current.second][j]<<","<<j<<"}\n";
+                    minheap.push({adj[current.second][j],j});
+                }
+            }
+        }
+        return count;
+    }
+};
+
+Algorithm:
+1. Create an adjacency matrix of all the nodes and the distances
+2. Create a visit set and a minheap using priority_queue
+3. Add any node in the graph to the minheap
+4. BFS on this node and add the neighbours to the minheap, skip over the neighbours that have already been visited
+5. While processing initially, also check if this node is in the visit set, if yes, skip the iteration
+6. Stop the process once the visit set contains all the nodes.
+
+
+TODO:
+https://www.youtube.com/watch?v=mLpW3qfbNJ8&list=PLot-Xpze53ldBT_7QA8NVot219jFNr_GI&index=17&ab_channel=NeetCode
+https://leetcode.com/problems/count-sub-islands/
+
+#DATE 26/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 778. Swim in Rising Water
+2. Walls and Gates - Multi-Source BFS - Leetcode 286 | https://www.lintcode.com/problem/663/
+
+#DATE 27/07/2021
+
+Topic: Leetcode
+
+Problems:
+1. 1905. Count Sub Islands
+class Solution {
+public:
+    bool dfs(int i,int j,vector<vector<int>>& grid1, vector<vector<int>>& grid2,
+        set<pair<int,int>> &visited, int &n, int &m){
+        if(i<0 || j<0 || i>=n || j>=m || grid2[i][j] == 0
+          || visited.find({i,j}) != visited.end()){
+            return true;
+        }
+
+        visited.insert({i,j});
+
+        bool result = true;
+        if(grid1[i][j] == 0){
+            result = false;
+        }
+
+        result = dfs(i+1,j,grid1,grid2,visited,n,m) && result;
+        result = dfs(i-1,j,grid1,grid2,visited,n,m) && result;
+        result = dfs(i,j+1,grid1,grid2,visited,n,m) && result;
+        result = dfs(i,j-1,grid1,grid2,visited,n,m) && result;
+
+        return result;
+    }
+    int countSubIslands(vector<vector<int>>& grid1, vector<vector<int>>& grid2) {
+
+        int n = grid1.size();
+        int m = grid1[0].size();
+        int count = 0;
+        set<pair<int,int>> visited;
+
+        for(int i=0;i!=n;++i){
+            for(int j=0;j!=m;++j){
+                if(visited.find({i,j}) == visited.end() && grid2[i][j] == 1
+                  && dfs(i,j,grid1,grid2,visited,n,m) == true){
+                    ++count;
+                }
+            }
+        }
+        return count;
+    }
+};
+
+2. 91. Decode Ways
+class Solution {
+public:
+    int solve(int i, string &s, vector<int> &dp){
+        if(i == s.size()){
+            return 1;
+        }
+        if(i > s.size() || s[i] == '0'){
+            return 0;
+        }
+        if(dp[i] != -1){
+            return dp[i];
+        }
+        int a = 0;
+        int b = 0;
+        string temp_for_2 = s.substr(i,2);
+        a = solve(i+1,s,dp);
+        if(stoi(temp_for_2) >0 && stoi(temp_for_2) < 27){
+            b = solve(i+2,s,dp);
+        }
+        return dp[i] = a+b;
+    }
+    int numDecodings(string s) {
+        vector<int> dp(s.size(),-1);
+        return solve(0,s,dp);
+    }
+};
+
+#DATE 28/07/2021
+
+Topic: Leetcode
+
+Problems:
+Checking types of DP problems: https://www.youtube.com/watch?v=mBNrRy2_hVs&ab_channel=NeetCode
+
+1. 1143. Longest Common Subsequence
+2. 516. Longest Palindromic Subsequence
+
+TODO:
+https://leetcode.com/problems/decode-ways-ii/
+
+
+#DATE 02/08/2021
+
+Topic: Leetcode 75
+
+Problems:
+1. 1. Two Sum
+2. 167. Two Sum II - Input array is sorted
+3. 121. Best Time to Buy and Sell Stock
+4. 122. Best Time to Buy and Sell Stock II
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();
+        int max_profit = 0;
+        for(int i=1;i!=n;++i){
+            if(prices[i] > prices[i-1]){
+                max_profit += prices[i] - prices[i-1];
+            }
+        }
+        return max_profit;
+    }
+};
+5. 70. Climbing Stairs
+
+#DATE 05/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 238. Product of Array Except Self
+2. 53. Maximum Subarray
+
+#DATE 06/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 152. Maximum Product Subarray
+2. 153. Find Minimum in Rotated Sorted Array
+
+#DATE 07/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 628. Maximum Product of Three Numbers
+2. 33. Search in Rotated Sorted Array
+3. 111. Minimum Depth of Binary Tree
+4. 429. N-ary Tree Level Order Traversal
+5. 107. Binary Tree Level Order Traversal II
+6. 993. Cousins in Binary Tree
+7. 637. Average of Levels in Binary Tree
+8. 94. Binary Tree Inorder Traversal
+9. 144. Binary Tree Preorder Traversal
+10. 145. Binary Tree Postorder Traversal
+11. 590. N-ary Tree Postorder Traversal
+12. 589. N-ary Tree Preorder Traversal
+13. 404. Sum of Left Leaves
+
+#DATE 08/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 110. Balanced Binary Tree
+
+class Solution {
+public:
+    int traverse(TreeNode* root){
+        if(root == nullptr){
+            return 0;
+        }
+        return max(traverse(root->left),traverse(root->right)) + 1;
+    }
+    bool isBalanced(TreeNode* root) {
+        if(root == nullptr){
+            return true;
+        }
+        int left = traverse(root->left);
+        int right = traverse(root->right);
+
+        return (abs(left-right) <= 1 &&
+                isBalanced(root->left) && isBalanced(root->right));
+    }
+};
+
+2. Next Greater Element
+3. 496. Next Greater Element I
+4. 503. Next Greater Element II
+5. 133. Clone Graph
+
+#DATE 09/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 198. House Robber
+2. 1137. N-th Tribonacci Number
+3. 1911. Maximum Alternating Subsequence Sum
+
+Recursive:
+class Solution {
+public:
+    long long solve(int current,int current_sum, vector<int> &nums, bool add){
+        if(current == nums.size()){
+            return current_sum;
+        }
+        if(add){
+            current_sum = max(solve(current+1,current_sum+nums[current],nums,!add),
+                              solve(current+1,current_sum,nums,add));
+        }else{
+            current_sum = max(solve(current+1,current_sum-nums[current],nums,!add),
+                             solve(current+1,current_sum,nums,add));
+        }
+
+        return current_sum;
+    }
+
+    long long maxAlternatingSum(vector<int>& nums) {
+        return solve(0,0,nums,true);
+    }
+};
+
+DP:
+class Solution {
+public:
+    long long maxAlternatingSum(vector<int>& nums) {
+        long long int evensum = nums[0];
+        long long int oddsum = 0;
+
+        for(int i=1;i<nums.size();++i){
+            evensum = max(evensum, oddsum + nums[i]);
+            oddsum = max(oddsum, evensum - nums[i]);
+        }
+        return evensum;
+    }
+};
+
+#DATE 10/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 91. Decode Ways
+2. 1143. Longest Common Subsequence
+3. 300. Longest Increasing Subsequence
+4. 322. Coin Change
+
+
+#DATE 11/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 139. Word Break
+2. 416. Partition Equal Subset Sum
+
+#DATE 12/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 494. Target Sum
+2. 518. Coin Change 2
+
+
+#DATE 13/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 39. Combination Sum
+
+class Solution {
+public:
+    vector<vector<int>> ans;
+
+    void reachSum(vector<int> arr, int curr, int index, int t, vector<int> temp) {
+        if(curr == t) {
+            ans.push_back(temp);
+            return;
+        }
+        if(curr > t || index >= arr.size()) {
+            return;
+        }
+        temp.push_back(arr[index]);
+        reachSum(arr, curr + arr[index], index, t, temp);
+        temp.pop_back();
+        reachSum(arr, curr, index+1, t, temp);
+    }
+
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        int curr = 0;
+        int index = 0;
+        vector<int> temp;
+        reachSum(candidates, curr, index, target, temp);
+        return ans;
+    }
+};
+
+#DATE 17/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. Merge Sort.
+2. 242. Valid Anagram
+
+SORTING: REF: https://medium.com/@mera.stackhouse/which-sorting-algorithms-to-know-for-the-tech-interview-654a1f619e1d
+1. Merge Sort (DONE)
+2. Quick Sort (WTF)
+3. Insertion Sort
+4. Heap Sort (Should have 12. how to create heaps from scratch)
+5. Bubble Sort
+
+
+#DATE 18/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. 20. Valid Parentheses
+2. 125. Valid Palindrome
+3. 49. Group Anagrams
+
+#DATE 19/08/2021
+
+Topic: Aptitude
+
+Resource: https://www.indiabix.com/aptitude/questions-and-answers/
+
+Problems:
+1. Page-1: Problems on Trains
+2. Page-1: Time and Distance
+3. Page-1: Time and Work
+
+#DATE 21/08/2021
+
+Topic: Aptitude
+
+Problems:
+1. Page-1,2: Permutation and Combination
+2. Page-1,2: Problems on Numbers
+3. 238. Product of Array Except Self
+4. 977. Squares of a Sorted Array (Two pointers like merging part in mergesort. Else, use basic sorting)
+5. 226. Invert Binary Tree
+
+#DATE 22/08/2021
+
+Topic: Aptitude
+
+Problems:
+1. Page-1,2: Profit and Loss
+2. 40. Combination Sum II
+class Solution {
+public:
+
+    void solve(int pos, vector<int> current_result, vector<vector<int>> &result,
+              vector<int> &candidates, int target){
+        if(target == 0){
+            result.push_back(current_result);
+            return;
+        }
+        if(target <= 0){
+            return;
+        }
+        int prev = -1;
+
+        while(pos < candidates.size()){
+            if(candidates[pos] == prev){
+                ++pos;
+                continue;
+            }
+            current_result.push_back(candidates[pos]);
+            solve(pos+1, current_result, result,
+                  candidates, target-candidates[pos]);
+            current_result.pop_back();
+            prev = candidates[pos];
+            ++pos;
+        }
+    }
+
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        vector<vector<int>> result;
+        vector<int> current_result;
+        sort(candidates.begin(), candidates.end());
+        solve(0,current_result, result, candidates, target);
+        return result;
+    }
+};
+
+#DATE 24/08/2021
+
+Topic: Aptitude
+
+Problems:
+1. Page-1,2: Average
+2. Calendar
+3. Page-1: Partnership
+4. Page-1: Clocks
+
+#DATE 25/08/2021
+
+Topic: Aptitude
+
+Problems:
+1. Page-1,2,3: Boats and Streams
+2. Page-1,2: Problems on Ages
+3. Clocks
+
+#DATE 26/08/2021
+
+Interview:
+Time: 9:15AM - 10:15AM
+Company: Tercept
+Aptitude Interview - PASSED
+
+#DATE 27/08/2021
+
+Topic: Leetcode
+
+Problems:
+1. QuickSort
+2. 897. Increasing Order Search Tree
+3. 213. House Robber II
+4. 680. Valid Palindrome II
+5. 15. 3Sum
+6. 11. Container With Most Water
+7. 62. Unique Paths
+8. 55. Jump Game
+
+TODO TODAY:
+1. Trees: DONE
+2. DFS, BFS, Graphs (Dijkstras) - https://www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/: DONE
+3. DP (Knapsack (0/1, Unbounded) , longest common subsequence (LEFT) and some other related stuff): DONE
+4. Greedy: DONE
+5. Stacks & Queues
+6. Heaps: DONE
+
+
+
+Ref:
+https://www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/
+
+TODO - Theory:
+
+1. C++ OOPS concepts [Classes, Inheritance, Interfaces, Classifiers etc]
+2. Basics of SQL
+3. Basics of Everything listed out in the Resumse.
+
+#DATE 28/08/2021 
+
+Topic: Object Oriented Programming Concepts 
+Reference: https://www.mygreatlearning.com/blog/oops-concepts-in-java/
+
+#DATE 30/08/2021 
+
+Topic: Object Oriented Programming concepts
+
+1. Java Concepts (DONE)
+2. SQL Concepts (DONE)
+3. C++ Concepts (DONE)
+4. Opretaion System Concepts (DONE)
+
+#DATE 31/08/2021 
+
+Topic: Concepts / Leetcode
+
+Problems:
+1. 62. Unique Paths
+2. 55. Jump Game
+3. 56. Merge Intervals
+4. 206. Reverse Linked List
+5. 435. Non-overlapping Intervals
+
+#DATE 01/09/2021 
+
+Topic: Concepts
+
+Concepts:
+1. Node.js
+References:
+Basics
+1. https://www.youtube.com/watch?v=ENrzD9HAZK4&ab_channel=Fireship
+2. https://www.youtube.com/watch?v=pU9Q6oiQNd0&ab_channel=LearnCode.academy
+3. https://www.youtube.com/watch?v=FqMIyTH9wSg&ab_channel=LearnCode.academy
+
+Questions
+1. https://www.interviewbit.com/node-js-interview-questions/
+2. https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-questions
+3. https://github.com/learning-zone/nodejs-interview-questions#q-what-does-the-runtime-environment-mean-in-nodejs
+
+INFO:
+package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+
+package.json: records the minimum version you app needs. If you update the versions of a particular package, the change is not going to be reflected here.
+
+
+#DATE 02/09/2021 
+
+Topic: Concepts 
+7. Python
+References:
+1. https://www.youtube.com/watch?v=I2wURDqiXdM&ab_channel=howCode
+
+Questions:
+1. https://www.interviewbit.com/python-interview-questions/
+
+TODO:
+1. https://www.mygreatlearning.com/blog/python-interview-questions/
+
+#TODO - CONCEPTS:
+1. Node.js (DONE)
+2. React.js 
+3. Django
+4. MongoDB
+5. Docker
+6. Kubernetes
+7. Python
+
+TODO:
+1. What is the Diamond inheritance problem.
+
+#DATE 07/09/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 143. Reorder List
+2. 82. Remove Duplicates from Sorted List II
+3. 821. Shortest Distance to a Character
+4. 977. Squares of a Sorted Array
+
+#DATE 08/09/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 92. Reverse Linked List II
+2. 448. Find All Numbers Disappeared in an Array
+3. 442. Find All Duplicates in an Array
+4. 121. Best Time to Buy and Sell Stock
+
+#DATE 09/09/2021
+
+Topic: Leetcode
+
+TODO - Code:
+1. 81. Search in Rotated Sorted Array II
+2. 713. Subarray Product Less Than K
+3. Merge Sort (DONE)
+4. Quick Sort (DONE)
+5. How to Define Struct
+6. 207. Course Schedule
+7. 210. Course Schedule II
+8. 310. Minimum Height Trees
+9. 453. Minimum Moves to Equal Array Elements
+10. 639. Decode Ways II
+11. 983. Minimum Cost For Tickets (DONE)
+12. How to create heaps from scratch
+13. 417. Pacific Atlantic Water Flow
+
+Problems:
+1. 983. Minimum Cost For Tickets (Backtracking only)
+
+
+Prep for AnkerCloud:
+
+1. NodeJS
+https://www.youtube.com/watch?v=TlB_eWDSMt4&ab_channel=ProgrammingwithMosh
+
+Modules on NodeJS: https://leanylabs.com/blog/npm-packages-for-nodejs/
+
+TODO:
+https://www.youtube.com/watch?v=pKd0Rpw7O48&ab_channel=ProgrammingwithMosh
+
+2. ReactJS
+https://www.youtube.com/watch?v=Ke90Tje7VS0&ab_channel=ProgrammingwithMosh
+
+3. MongoDB 
+https://www.youtube.com/watch?v=pWbMrx5rVBE&ab_channel=TraversyMedia
+
+4. DBMS Concepts 
+5. AWS
+
+
+# 13/09/2021 
+
+Topic: Leetcode 
+
+Problems:
+
+1. Missing number in array 
+2. Next Greater Element 
+3. 283. Move Zeroes
+4. Level order traversal 
+5. Non Repeating Character | 387. First Unique Character in a String
+6. First non-repeating character in a stream 
+
+
+TODO:
+1. https://www.lintcode.com/problem/551/solution
+2. Python Decorators
+3. REST APIs
+4. https://practice.geeksforgeeks.org/problems/implement-atoi/1
+5. https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
+
+#DATE 14/09/2021
+
+Topic: Leetcode
+
+Problems:
+1. 75. Sort Colors
+2. 27. Remove Element
+3. Level order traversal in spiral form 
+4. 42. Trapping Rain Water
+5. Leaders in an array 
+
+#DATE 15/09/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. https://www.geeksforgeeks.org/count-total-anagram-substrings/
+2. 238. Product of Array Except Self
+3. Minimum Platforms 
+
+TODO:
+1. https://www.geeksforgeeks.org/lexicographic-rank-of-a-string/
+2. https://www.geeksforgeeks.org/puzzles/#Puzzles
+3. https://www.geeksforgeeks.org/convert-ternary-expression-binary-tree/
+4. https://www.interviewbit.com/problems/ways-to-decode/
+5. https://practice.geeksforgeeks.org/problems/unsorted-array4925/1
+6. https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+7. https://leetcode.com/problems/minimum-number-of-refueling-stops/
+
+
+TODO: 
+1. Cracking the Coding Interview
+
+#DATE 16/09/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 31. Next Permutation
+
+
+#DATE 17/09/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 1024. Video Stitching
+2. 1326. Minimum Number of Taps to Open to Water a Garden
+3. 871. Minimum Number of Refueling Stops
+4. 240. Search a 2D Matrix II
+
+#DATE 18/09/2021
+
+Topic: Leetcode
+
+Problems:
+
+1. 79. Word Search
+2. 74. Search a 2D Matrix (NlogN Solution)
+3. 1160. Find Words That Can Be Formed by Characters
+4. Find the string in grid  | https://practice.geeksforgeeks.org/problems/find-the-string-in-grid0111/1#
+5. 14. Longest Common Prefix
+6. 21. Merge Two Sorted Lists
+7. 88. Merge Sorted Array
+8. 168. Excel Sheet Column Title
+9. 5. Longest Palindromic Substring
+10. Longest Common Substring 
+11. 38. Count and Say
+12. 350. Intersection of Two Arrays II
+
+
+TODO:
+1. https://www.hackerrank.com/challenges/prime-sum/problem
+2. https://www.geeksforgeeks.org/print-matrix-in-zig-zag-fashion/
+
+
+
+#DATE 19/09/2021
+
+Topic: Leetcode 
+
+Problems:
+
+1. 287. Find the Duplicate Number
+2. First Repeating Element 
+3. First K elements 
+4. New Balanced Brackets
+
+Probable Code:
+int main(){
+    string s = "{}}{}}";
+    int n = s.size();
+    stack<char> brackets;
+    int result = 0;
+    for(int i=n-1;i>-1;--i){
+        if(s[i] == '}'){
+            brackets.push('}');
+        }else{
+            if(brackets.size() > 2){
+                int current_size = brackets.size()-2;
+                result += (current_size%2)*2 + (current_size / 2);
+            }else if(brackets.size() < 2){
+                result += 2-brackets.size();
+            }
+            while(!brackets.empty()){
+                brackets.pop();
+            }
+        }
+    }
+    if(!brackets.empty()){
+        if(brackets.size() > 2){
+            int current_size = brackets.size();
+            result += (current_size%2)*2 + (current_size / 2);
+        }else if(brackets.size() <= 2){
+            result += 1;
+        }
+    }
+    cout<<"RESULT: "<<result;
+    return result;
+}
+
+#DATE 20/09/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 412. Fizz Buzz
+2. 36. Valid Sudoku
+3. 347. Top K Frequent Elements
+4. 692. Top K Frequent Words
+5. 344. Reverse String
+6. 202. Happy Number
+7. 395. Longest Substring with At Least K Repeating Characters
+8. 74. Search a 2D Matrix (LogN Solution)
+9. 378. Kth Smallest Element in a Sorted Matrix
+
+
+#DATE 21/09/2021 
+
+Topic: DevRev Online Test
+1. Sudoku Solver (NEED TO LEARN) - (DONE) |
+2. Phone Prefix (SOLVED)
+3. Allocate Hostname (SOLVED)
+4. Task Runner (NEED TO LEARN)
+
+Topic: Leetcode 
+
+Problems:
+1. 37. Sudoku Solver
+2. 541. Reverse String II
+3. 139. Word Break
+4. 127. Word Ladder
+5. 79. Word Search
+
+#DATE 22/09/2021 
+
+Topic: Leetcode
+
+Problems:
+1. 212. Word Search II
+CODE: SIMPLE TRIE IMPLEMENTATION
+class Trie{
+public:
+    bool isWord;
+    Trie* children[26];
+    Trie(){
+        for(int i=0;i<26;++i){
+            this->children[i] = nullptr;
+        }
+        this->isWord = false;
+    }
+    void addNode(string word){
+        Trie *current = this;
+        for(char letters: word){
+            if(current->children[letters-'a'] == nullptr){
+                current->children[letters-'a'] = new Trie();
+            }
+            current = current->children[letters-'a'];
+        }
+        current->isWord = true;
+    }
+};
+
+class Solution {
+public:
+    void dfs(int row, int col, Trie* node, string word,
+             vector<vector<char>>& board, set<string> &set_result){
+        if(row<0 || row >= board.size() || col<0 || col >= board[0].size()
+          || board[row][col] == '.'){
+            return;
+        }
+        if(node->children[board[row][col]-'a'] == nullptr){
+            return;
+        }
+        node = node->children[board[row][col] - 'a'];
+        word += board[row][col];
+        char temp = board[row][col];
+        board[row][col] = '.';
+        
+        if(node->isWord){
+            set_result.insert(word);
+        }
+        dfs(row+1,col,node,word,board,set_result);
+        dfs(row-1,col,node,word,board,set_result);
+        dfs(row,col+1,node,word,board,set_result);
+        dfs(row,col-1,node,word,board,set_result);
+        
+        board[row][col] = temp;
+    }
+    
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
+        Trie *root = new Trie();
+        for(string word: words){
+            root->addNode(word);
+        }
+        set<string> set_result;
+        int n = board.size();
+        int m = board[0].size();
+        
+        for(int i=0;i<n;++i){
+            for(int j=0;j<m;++j){
+                dfs(i,j,root,"",board,set_result);
+            }
+        }
+        
+        vector<string> result(set_result.begin(), set_result.end());
+        return result;
+    }
+};
+2. 208. Implement Trie (Prefix Tree)
+
+
+TODO:
+1. Stack operations for min in O(1)
+2. Search a sorted matrix 2 | Get a rank of a number in a sorted matrix
+
+#DATE 23/09/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 424. Longest Repeating Character Replacement
+2. 454. 4Sum II
+
+Topic: Atllifelab assessment 
+
+Problems:
+1. Library Management System.
+
+#DATE 24/09/2021
+
+Topic: Atllifelab assessment 
+
+Problems:
+1. Library Management System.
+
+#DATE 25/09/2021 
+
+Topic: Leetcode
+
+1. 377. Combination Sum IV
+2. 75. Sort Colors
+
+1. Valid Anagram
+
+Topic: Learning JS - ES6/7/8
+
+Resources:
+1. https://www.youtube.com/watch?v=W6NZfCO5SIk&ab_channel=ProgrammingwithMosh
+2. https://www.youtube.com/watch?v=NCwa_xi0Uuc&ab_channel=ProgrammingwithMosh
+3. https://www.youtube.com/watch?v=nZ1DMMsyVyI&ab_channel=freeCodeCamp.org
+ 
+
+TODO:
+1. Node JS best practices: https://www.perfomatix.com/nodejs-coding-standards-and-best-practices-node-js-development-company/
+
+#DATE 26/09/2021
+
+Topic: Atllifelab assessment 
+Problems:
+1. Library Management System. (Completed)
+
+#DATE 27/09/2021 
+
+Topic: SQL Basics and Syntax
+
+Resources:
+1. https://www.youtube.com/watch?v=7S_tz1z_5bA&ab_channel=ProgrammingwithMosh
+
+#DATE 28/09/2021 
+
+Topic: SQL Basics and Syntax
+ 
+ NOTE: 
+ LIMIT CLAUSE:
+ -> SELECT * FROM customers 6,3;
+ Has an offset of 6 and it will pick 3 rows;
+
+ -> SELECT * FROM customers offset,number_of_fields;
+
+#DATE 29/09/2021 
+
+Topic: SQL Basics and Syntax
+
+Notes:
+
+JOINS:
+- INNER
+- LEFT
+- RIGHT
+- NATURAL // DO NOT USE
+- CROSS
+
+INSERT:
+SINGLE INSERTION:
+INSERT INTO <table_name> (<ATTR NAME>, <ATTR NAME>, ...) VALUES (V1, V2, ...);
+
+MULTIPLE INSERTIONS:
+INSERT INTO <table_name> (<ATTR NAME>, <ATTR NAME>, ...) 
+VALUES 
+    (V1, V2, ...),
+    (V3, V8, ...),
+    (V4, V7, ...),
+    (V5, V6, ...);
+
+COPYING A TABLE USING VALUES:
+CREATE TABLE tables_archived AS 
+SELECT * FROM tables_prod;
+
+UPDATE:
+UPDATE table_name 
+SET <UPDATE-ATTR> = <VALUE>, <UPDATE-ATTR> = <VALUE>
+WHERE <TABLE-ATTR> = <CONDITION>;
+
+DELETE:
+DELETE FROM <table-name>
+WHERE <attr-name> = <condition>
+
+Topic: Learning Node JS 
+Resources:
+1. https://www.youtube.com/watch?v=Oe421EPjeBE&ab_channel=freeCodeCamp.org
+
+
+#DATE 30/09/2021 
+
+Topic: Learning Node JS 
+
+#DATE 04/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+
+#DATE 05/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Max sum in the configuration | https://practice.geeksforgeeks.org/problems/max-sum-in-the-configuration/1#
+2. Topological sort 
+3. 210. Course Schedule II
+
+
+Resources:
+1. https://www.interviewbit.com/search/?q=Amazon
+2. https://www.interviewbit.com/amazon-interview-questions/#questions
+
+
+NOTE: 
+rotate function in c++:
+rotate(first_iterator, pivot_iterator, end_iterator);
+
+For left rotate:
+rotate(A.begin(), A.begin()+1, A.end());
+rotate(A+0,A+1,A+N);
+
+For right rotate:
+rotate(A.begin(), A.begin()+size-1, A.end());
+rotate(A+0,A+N-1,A+N);
+
+#DATE 06/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 200. Number of Islands
+2. 130. Surrounded Regions
+
+#DATE 07/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+
+1. The Celebrity Problem 
+2. Minimum Distinct Ids 
+3. Mirror Tree 
+4. Trie | (Insert and Search) 
+5. X Total Shapes 
+6. Find the Highest number 
+
+#DATE 08/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Find Transition Point 
+2. Get minimum element from stack 
+3. 91. Decode Ways
+
+# DATE 11/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Pythagorean Triplet 
+2. Next Greater Element 
+3. Stock span problem 
+4. 2. Add Two Numbers | Add two numbers represented by linked lists
+6. 206. Reverse Linked List
+7. Kadane's Algorithm 
+
+#DATE 12/10/2021 
+
+Topic: Amazon Interview Preparation / Leetcode 
+
+Problems:
+1. 0 - 1 Knapsack Problem 
+2. Longest Palindromic Subsequence 
+3. 199. Binary Tree Right Side View [LEFT VIEW | RIGHT VIEW DONE] [BFS approach]
+
+#DATE 13/10/2021 
+
+Topic: LeetCode 
+
+Problems:
+1. 103. Binary Tree Zigzag Level Order Traversal
+2. 987. Vertical Order Traversal of a Binary Tree [MAPS | X-AXIS | Y-AXIS]
+3. 617. Merge Two Binary Trees
+4. Top View of Binary Tree [MAPS | X-AXIS | Y-AXIS]
+5. Bottom View of Binary Tree [MAPS | X-AXIS | Y-AXIS]
+6. 513. Find Bottom Left Tree Value [BFS]
+7. Implementing Heaps
+Heaps:
+- Parent      = (index - 1)/2
+- Left Child  = index*2 + 1
+- Right Child = index*2 + 2
+8. 743. Network Delay Time
+9. Dijkstras Algorithm
+
+Heap implementation:
+1. https://www.youtube.com/watch?v=t0Cq6tVNRBA&t=407s&ab_channel=HackerRank
+
+#DATE 14/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Sudoku Solver 
+2. Valid Sudoku
+3. 212. Word Search II
+4. 1268. Search Suggestions System
+5. Remove duplicate element from sorted Linked List 
+6. Logical question - Given 27 balls of which 1 ball is defective (has less weight). 
+Given an electronic weighing machine & 3 chances to utilize it. Find the defective ball within the given chance limit.
+7. https://www.geeksforgeeks.org/pair-in-cpp-stl/ [Two pointer appraoch]
+8. 937. Reorder Data in Log Files
+9. 1487. Making File Names Unique
+
+#DATE 15/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Union-Find Algorithm.
+2. 684. Redundant Connection
+3. 685. Redundant Connection II
+4.  Amazon Fresh Promo | https://leetcode.com/discuss/interview-question/1002811/Amazon-or-OA-20201-or-Fresh-Promotion
+bool promoWinner(vector<vector<string>> &codeList, vector<string> &shoppingCart){
+    vector<string> codeListDecode;
+    for(auto values: codeList){
+        for(string entries: values){
+            codeListDecode.push_back(entries);
+        }
+    }
+    cout<<"Promo Code: [";
+    for(string entries: codeListDecode){
+        cout<<entries<<",";
+    }
+    cout<<"]\n";
+
+    int codeIndex = 0;
+    int shoppingIndex = 0;
+
+    while(codeIndex < codeListDecode.size() && shoppingIndex < shoppingCart.size()){
+        if(codeListDecode[codeIndex] == "anything"){
+            ++codeIndex;
+            ++shoppingIndex;
+        }else{
+            if(codeListDecode[codeIndex] == shoppingCart[shoppingIndex]){
+                ++codeIndex;
+                ++shoppingIndex;
+            }else{
+                codeIndex = 0;
+                ++shoppingIndex;
+            }
+        }
+    }
+    if(codeIndex == codeListDecode.size()){
+        return true;
+    }
+    return false;
+}
+5. Refresh of DP problems.
+
+#DATE 18/10/2021 
+
+Topic: Leetcode
+
+Problems:
+1. Minimum number of Insertions and Deletion required to convert String A to String B
+2. 72. Edit Distance
+3. Find the maximum path sum between two leaves of a binary tree | 124. Binary Tree Maximum Path Sum (With variation in choice)
+
+TODO:
+https://www.geeksforgeeks.org/amazon-interview-experience-for-sde-1-off-campus-7/
+
+#DATE 19/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 973. K Closest Points to Origin
+2. Amazon Fresh Deliveries
+3. Types of Binary Trees | https://www.upgrad.com/blog/5-types-of-binary-tree/
+4. 129. Sum Root to Leaf Numbers
+5. 49. Group Anagrams
+6. 200. Number of Islands
+7. 42. Trapping Rain Water
+8. Maximum Width of Tree 
+9. Next Greater Element 
+
+NOTE: 
+When you sort a vector or use a max heap or a min heap, the values get sorted from left to right of the input values.
+
+#DATE 20/10/2021
+
+Topic: Leetcode 
+
+Problems:
+1. Leetcode 269. Alien Dictionary | https://practice.geeksforgeeks.org/problems/alien-dictionary/
+bool dfs(char current, map<char, set<char>> &adj,
+    string &result, set<char> &visited, set<char> &path){
+    if(path.find(current) != path.end()){
+        return true;
+    }       
+    if(visited.find(current) != visited.end()){
+        return false;
+    }
+    visited.insert(current);
+    path.insert(current);
+    
+    for(char neighbours: adj[current]){
+        if(dfs(neighbours,adj,result,visited,path)){
+            return true;
+        }
+    }
+    result += current;
+    path.erase(current);
+    return false;
+}
+    
+string findOrder(string dict[], int N, int K) {
+    //code here
+    map<char, set<char>> adj;
+    for(int i=0;i!=N-1;++i){
+        string word1 = dict[i];
+        string word2 = dict[i+1];
+        int minSize = min(word1.size(), word2.size());
+        string subStrWord1 = word1.substr(0, minSize);
+        string subStrWord2 = word2.substr(0, minSize);
+        if(subStrWord1 == subStrWord2 && word1.size() > word2.size()){
+            return "";
+        }
+        for(int j=0;j!=minSize;++j){
+            if(word1[j] != word2[j]){
+                adj[word1[j]].insert(word2[j]);
+                break;
+            }
+        }
+    }
+    
+    string result = "";
+    set<char> visited;
+    set<char> path;
+    for(auto pairs: adj){
+        char current = pairs.first;
+        if(visited.find(current) == visited.end()){
+            if(dfs(current,adj,result,visited,path)){
+                return "";
+            }
+        }
+    }
+    reverse(result.begin(), result.end());
+    return result;
+}
+
+Algorithm: 
+
+1. Create an adjancency list for all the dependencies using a map 
+2. Take care of the edge case of consecutive words being substrings and when to return emptry string 
+3. Once the adjacency list is complete, do a DFS on all the entries and sort the topological sort of the traversal 
+4. Reverse the result and return it.
+
+NOTE: 
+The problem can be boiled down to 2 things:
+1. Creating an adjancency list from the inputs
+2. Returning the topological sort of the graph created in step: 1.
+
+2. 4. Median of Two Sorted Arrays [Simulate merging without actually merging using pointers]
+https://www.youtube.com/watch?v=q6IEA26hvXc&ab_channel=NeetCode
+double getMedian(vector<int> nums1, vector<int> nums2){
+    vector<int> A;
+    vector<int> B;
+    
+    if(nums1.size() < nums2.size()){
+        A = nums1;
+        B = nums2;
+    }else{
+        A = nums2;
+        B = nums1;
+    }
+    
+    int left = 0;
+    int right = A.size()-1;
+    int total = nums1.size() + nums2.size();
+    int half = total / 2;
+    while(true){
+        int i = floor(left + (right-left)/2.0);
+        int j = half - i - 2;
+        int Aleft;
+        int Aright;
+        int Bleft;
+        int Bright;
+        
+        if(i < 0){
+            Aleft = INT_MIN;
+        }else{
+            Aleft = A[i];
+        }
+        if(i+1 >= A.size()){
+            Aright = INT_MAX;
+        }else{
+            Aright = A[i+1];
+        }
+        
+        if(j < 0){
+            Bleft = INT_MIN;
+        }else{
+            Bleft = B[j];
+        }
+        if(j+1 >= B.size()){
+            Bright = INT_MAX;
+        }else{
+            Bright = B[j+1];
+        }
+        
+        if(Aleft <= Bright && Bleft <= Aright){
+            if(total%2){
+                // odd
+                return min(Aright, Bright);
+            }else{
+                return (min(Aright,Bright) + max(Aleft,Bleft))/2.0;
+            }
+        }else if(Aleft > Bright){
+            right = i-1;
+        }else{
+            left = i+1;
+        }
+    }
+    
+    return 0.0;
+}
+
+3. 953. Verifying an Alien Dictionary
+4. 232. Implement Queue using Stacks
+5. 225. Implement Stack using Queues
+6. 36. Valid Sudoku
+7. Remove elements from sorted Linked List which occurs more than once | Remove duplicates in a sorted Linked List
+8. 127. Word Ladder
+9. 101. Symmetric Tree | N-ary Symmetric Tree | https://www.youtube.com/watch?v=gn2ApElF2i0&ab_channel=Pepcoding
+
+#DATE 21/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 33. Search in Rotated Sorted Array
+2. https://prepfortech.in/sort-an-array-in-one-swap-where-two-elements-are-swapped-by-mistake
+
+PRACTICE: 
+1. Alien Dictionary
+2. 4. Median of Two Sorted Arrays
+
+Behavioral: https://interviewgenie.com/blog-1/interviewing-at-amazon-behavioral-interview-questions
+
+#DATE 22/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 235. Lowest Common Ancestor of a Binary Search Tree
+2. 236. Lowest Common Ancestor of a Binary Tree
+3. 543. Diameter of Binary Tree
+4. 973. K Closest Points to Origin
+
+#DATE 23/10/2021 - 28/10/2021 
+
+Topic: Blurgs Assignments 
+
+#DATE 29/10/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 10. Regular Expression Matching
+
+
+#DATE 02/11/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 44. Wildcard Matching
+2. 10. Regular Expression Matching
+
+
+#DATE 03/11/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. Amazon Optimal Utilization | https://leetcode.com/discuss/interview-question/373202 | https://leetcode.com/playground/7qkpxtVo
+2. 937. Reorder Data in Log Files | Q2. https://leetcode.com/discuss/interview-question/1261316/amazon-oa-sde-1-new-grad-2021-batch-india
+3. Design an approach for glowing different combinations of LEDs(Red, Blue, and Green) – Focused on OOPS concept and SOLID principles
+4. Shortest distance between two cells in a matrix or grid | BFS Solution | https://leetcode.com/playground/LpQVmcMM
+5. 300. Longest Increasing Subsequence
+6. Building Bridges | https://leetcode.com/playground/ECgttRKE | https://www.geeksforgeeks.org/dynamic-programming-building-bridges/ | https://www.youtube.com/watch?v=w6tSmS86C4w&ab_channel=IDeserve
+7. Leaf under budget | https://practice.geeksforgeeks.org/problems/leaf-under-budget/
+8. First non-repeating character in a stream  | https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/
+
+NOTE:
+1. To transform a string to lower 
+string a = "UPPERCASEINPUT";
+transform(a.begin(), a.end(), a.begin(), ::tolower);
+
+LEARN TODAY:
+SOLID PRINCIPLES:
+1. https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+2. https://www.geeksforgeeks.org/c-classes-and-objects/
+
+SOLID PRINCIPLES:
+S - Single-responsiblity Principle
+O - Open-closed Principle
+L - Liskov Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+
+#DATE 04/11/2021 
+
+Topic: Leetcode 
+
+Problem:
+1. Two Sum - Unique Pairs | https://leetcode.com/problems/two-sum/ | Count the number of distinct pairs in an array that adds up to a given target sum
+2. 1207. Unique Number of Occurrences
+3. 540. Single Element in a Sorted Array
+4. Row with max 1s 
+5. Top View of Binary Tree 
+6. Bottom View of Binary Tree 
+7. Maximum of all subarrays of size k 
+8. Count number of substrings 
+9. 949. Largest Time for Given Digits
+10. 399. Evaluate Division
+
+NOTE: 
+
+CONVERTING INTEGER TO STRING:
+
+int number = 24;
+string strNumber = to_string(number);
+
+#DATE 05/11/2021 
+
+Topic: Leetcode
+
+Problems:
+1. 162. Find Peak Element
+2. 33. Search in Rotated Sorted Array
+3. Absolute List Sorting 
+4. 735. Asteroid Collision
+5. Subarrays with given sum | 560. Subarray Sum Equals K
+
+#DATE 06/11/2021 
+
+Problems:
+1. First non-repeating character in a stream | Double Linked List Approach (Time: O(1) Space: O(1))
+Ref: https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/
+class Solution{ 
+    struct node{
+        char data;
+        struct node* next;
+        struct node* prev;
+    };
+    
+    void addNode(struct node* &head, struct node* &tail, struct node* &current){
+        if(head == nullptr && tail == nullptr){
+            head = current;
+            tail = current;
+            return;
+        }
+        tail->next = current;
+        current->prev = tail;
+        tail = current;
+    }
+    
+    void removeNode(struct node* &head, struct node* &tail, struct node* &current){
+        if(current->data == head->data){
+            if(head->next == nullptr){
+                head = nullptr;
+                tail = nullptr;
+            }else{
+                head = head->next;
+                head->prev = nullptr;
+            }
+        }
+        else if(current->data == tail->data){
+            tail = tail->prev;
+            tail->next = nullptr;
+        }else{
+            current->prev->next = current->next;
+            current->next->prev = current->prev;
+        }
+        free(current);
+    }
+    
+	public:
+		string FirstNonRepeating(string A){
+		    // Code here
+		    struct node* dllMap[26];
+		    struct node* head = nullptr;
+		    struct node* tail = nullptr;
+		    vector<int> frequencyMap(26,0);
+		    
+		    for(int i=0;i!=26;++i){
+		        dllMap[i] = nullptr;
+		    }
+		    string output;
+		    
+		    // Process the input
+		    
+		    for(char value: A){
+		        if(frequencyMap[value-'a'] == 0){
+		            // Occurring for the first time
+		            // Add to DLL, increament count and add to DLL_MAP
+		            struct node* current = new node;
+		            current->data = value;
+		            current->next = nullptr;
+		            current->prev = nullptr;
+		            addNode(head,tail,current);
+		            dllMap[value-'a'] = current;
+		            frequencyMap[value-'a']++;
+		        }else{
+		            // the character is repeating
+		            // Need to remove the node from the output
+		            if(dllMap[value-'a'] != nullptr){
+    		            struct node* current = dllMap[value-'a'];
+    		            removeNode(head,tail,current);
+    		            dllMap[value-'a'] = nullptr;
+		            }
+		            
+		        }
+		        
+		        if(head != nullptr){
+		            output += head->data;
+		        }else{
+		            output += '#';
+		        }		        
+		    }
+		    return output;
+		    
+		}
+};
+
+2. Rotten Oranges 
+3. Subtree with Maximum Average | https://www.lintcode.com/problem/597/ | https://leetcode.com/discuss/interview-question/349617
+
+For Binary Tree:
+class Solution{
+    public:
+    vector<double> dfs(TreeNode* root, TreeNode* &resultNode, 
+                        double &maxAverage){
+        if(root == nullptr){
+            return {0,0};
+        }
+        double currentSum = 0;
+        double currentCount = 0;
+        auto leftResult = dfs(root->left,resultNode,maxAverage);
+        auto rightResult = dfs(root->right, resultNode, maxAverage);
+
+        currentSum += leftResult[0] + rightResult[0] + root->val;
+        currentCount += leftResult[1] + rightResult[1] + 1;
+
+        double currentAverage = currentSum / currentCount;
+        if(currentAverage > maxAverage){
+            maxAverage = currentAverage;
+            resultNode = root;
+        }
+        return {currentSum, currentCount};
+    }
+
+    TreeNode * findSubtree2(TreeNode * root) {
+        // write your code here
+        TreeNode* resultNode = nullptr;
+        double maxAverage = INT_MIN * 1.0;
+        dfs(root, resultNode, maxAverage);
+        return resultNode;
+    }
+}
+
+For N-Ary Tree:
+class Solution{
+    public:
+    struct TreeNode{
+        int val;
+        vector<TreeeNode *> children;
+    };
+
+    vector<double> dfs(TreeNode* root, TreeNode *resultNode, double &maxAverage){
+        if(root == nullptr){
+            return {0,0};
+        }
+
+        double currentCount = 1;
+        double currentSum = root->val;
+
+        for(auto nodes: root->children){
+            vector<double> childResult = dfs(nodes, resultnode, maxAverage);
+            currentSum += childResult[0];
+            currentCount += childResult[1];
+        }
+
+        double currentAverage = currentSum / currentCount;
+        if(currentAverage > maxAverage){
+            maxAverage = currentAverage;
+            resultNode = root;
+        }
+        return {currentSum, currentCount};
+    }
+
+    TreeNode * findMaxAverageSubTree(TreeNode * root) {
+        // write your code here
+        TreeNode* resultNode = nullptr;
+        double maxAverage = INT_MIN * 1.0;
+        dfs(root, resultNode, maxAverage);
+        return resultNode;
+     }
+};
+
+4. Zero Sum Subarrays | [Subarrays with given sum | 560. Subarray Sum Equals K | Where K  = 0]
+5. Rearrange characters | https://practice.geeksforgeeks.org/problems/rearrange-characters4649/1/
+6. Search in a Rotated Array 
+7. Given a set of mapping A->B, where A is getting infected with covid-19 through B.  
+who was the first person to start the infection? 
+Eg: 2->3, 3->4, 5->6, 7->6, 6->1. So here 1 will be the answer.
+8. 152. Maximum Product Subarray
+9. 53. Maximum Subarray
+
+
+#DATE 07/11/2021 
+
+Topic: Leetcode 
+
+Problems:
+
+1. https://www.geeksforgeeks.org/maximum-product-subsequence-size-k/
+Algorithm: 
+a. Sort the array
+b. There are going to be 4 cases to handle here:
+Case 1: Maximum number is 0, K is odd: Return 0 because odd number of negative numbers will mulitply to a greater odd number.
+i.e you need to include 0 in the calculation which makes everything 0.
+Case 2: Maximum number is negative, K is odd: We need to take the right most numbers and start muliplying till we reach K.
+Case 3: Maximum number is positive, K is odd: You take A[n-1] in the product and solve for Case 4
+Case 4: K is even: Take pairs of 2 from the front and the back and compare the products and add it to the final product and keep
+iterating till you reach a total of K elements.
+
+2. Count all possible paths from top left to bottom right | Dynamic Programming | DP
+
+3. Count the number of ways the string can split to get pime number
+ref: https://leetcode.com/discuss/interview-question/593211/count-the-number-of-ways-the-string-can-split-to-get-pime-number
+ref: https://www.geeksforgeeks.org/count-of-ways-to-split-a-given-number-into-prime-segments/
+
+Time complexity explanation:
+Time complexity for countAllPrimeSegmentDP without isPrime is reduced from O ( 2 N − 1 ) to O ( N ) using array dp[] and 
+Time complexity for isPrime is O ( N ) while for buildSieve is O ( N ∗ l o g ( l o g ( N ) ) ) . Where N is the length of string. 
+Thus, Time complexity for countAllPrimeSegmentDP with isPrime is O ( N + N ∗ l o g ( l o g ( N ) ) ) . 
+Addition space for dp[] is used. This does not create any significance in space complexity. 
+Thus space complexity remain unchanged to O ( N ) . This is the most optimal solution for this problem.
+
+For build Sieve:
+Time complexity: O(N*log(log(N)))
+https://www.geeksforgeeks.org/how-is-the-time-complexity-of-sieve-of-eratosthenes-is-nloglogn/
+
+NOTE: Do not bother reading the above.
+
+Code:
+void createPrimeNumberPool(vector<bool> &primes){
+    primes[0] = false;
+    primes[1] = false;
+    for(int i=2;i<=1000;++i){
+        if(primes[i]){
+            for(int j=i*i;j<=1000;j+=i){
+                primes[j] = false;
+            }
+        }
+    }
+}
+
+int findPrimeSplits(string s, unordered_map<string,int> &dp, vector<bool> &primes){
+    if(s.size() == 0){
+        return 1;
+    }
+    if(dp.find(s) != dp.end()){
+        return dp[s];
+    }
+    int answer = 0;
+    for(int i=1;i<=s.size();++i){
+        string currentString = s.substr(0,i);
+        int currentNumber = stoi(currentString);
+        if(currentString[0] != '0' and currentNumber <= 1000 and primes[currentNumber]){
+            answer += findPrimeSplits(s.substr(i), dp, primes);
+        }
+    }
+    return dp[s] = answer;
+}
+
+int main(){
+    vector<bool> primes(1001,true);
+    createPrimeNumberPool(primes);
+    unordered_map<string, int> dp;
+    string s = "3175";
+    cout<<findPrimeSplits(s,dp,primes)<<"\n";
+}
+/*
+Time complexity:
+Checking subtrings: O(N) due to DP from O(2^N-1)
+Building Sieve: O(N*log(log(N)))
+Total: 
+Time complexity: O(N+N*log(log(N)))
+Space complexity: O(N)
+*/
+
+NOTE:
+1. Given a chessboard where you are at the bottom left corner. Tell me the number of different ways to reach the top right corner
+[Weird problem] | [Uses a Greedy Approach? How I am not sure] | [Try a Naive BFS to get the total count]
+
+#DATE 08/11/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. 1525. Number of Good Ways to Split a String
+2. 1573. Number of Ways to Split a String
+3. Implementation of MinHeap
+4. 212. Word Search II
+5. 208. Implement Trie (Prefix Tree)
+
+#DATE 09/11/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 494. Target Sum
+2. https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
+3. 1498. Number of Subsequences That Satisfy the Given Sum Condition
+
+#DATE 10/11/2021
+
+Topic: Leetcode
+1. 1483. Kth Ancestor of a Tree Node
+vector<vector<int>> dp;
+TreeAncestor(int n, vector<int>& parent) {
+    int height = int(log2(n));
+    dp.resize(n,vector<int>(height+1, 0));
+    
+    for(int j=0;j<=height;++j){
+        dp[0][j] = -1;
+    }
+    
+    for(int i=1;i!=n;++i){
+        dp[i][0] = parent[i];
+    }
+    
+    for(int i=1;i!=n;++i){
+        for(int j=1;j<=height;++j){
+            if(dp[i][j-1] < 0){
+                dp[i][j] = -1;
+            }else{
+                dp[i][j] = dp[dp[i][j-1]][j-1];
+            }
+        }
+    }
+}
+
+int getKthAncestor(int node, int k) {
+    if(node < 0){
+        return -1;
+    }
+    if(node == 0 && k > 0){
+        return -1;
+    }
+    int answer = 0;
+    for(int i=20;i>=0;--i){
+        if(k/(int(pow(2,i))) > 0){
+            int temp = k%(int(pow(2,i)));
+            if(temp != 0){
+                answer = getKthAncestor(dp[node][i], temp);
+            }else{
+                answer = dp[node][i];
+            }
+            break;
+        }
+    }
+    return answer;
+}
+
+2. 146. LRU Cache
+class Node{
+    public:
+    int key;
+    int value;
+    Node *next;
+    Node *prev;
+    
+    Node(){
+        this->value = -1;
+        this->key = -1;
+        this->next = nullptr;
+        this->prev = nullptr;
+    }
+    
+    Node(int nodeKey, int nodeValue){
+        this->key = nodeKey;
+        this->value = nodeValue;
+        this->next = nullptr;
+        this->prev = nullptr;
+    }
+};
+
+class LRUCache {
+public:
+    int size;
+    int currentSize = 0;
+    Node *dummyHead = new Node();
+    Node *dummyTail = new Node();
+    map<int, Node*> cacheData;
+    
+    LRUCache(int capacity) {
+        this->size = capacity;
+        this->currentSize = 0;
+    }
+    
+    int get(int key) {
+        if(cacheData.find(key) != cacheData.end()){
+            put(key, cacheData[key]->value);
+            return cacheData[key]->value;
+        }else{
+            return -1;
+        }
+    }
+    
+    void attachToHead(Node* &current){
+        // Attach to Head
+        if(this->dummyHead->next == nullptr){
+            this->dummyHead->next = current;
+            this->dummyTail->prev = current;
+        }else{
+            this->dummyHead->next->prev = current;
+            current->next = this->dummyHead->next;
+            current->prev = this->dummyHead;
+            this->dummyHead->next = current;
+        }
+    }
+    
+    void moveToFront(Node* &current){
+        if(current == this->dummyHead->next){
+            return;
+        }else if(current == this->dummyTail->prev){
+            // Detach from Tail
+            current->prev->next = dummyTail;
+            this->dummyTail->prev = current->prev;
+        }else{
+            // Detach
+            current->prev->next = current->next;
+            current->next->prev = current->prev;
+        }
+        // Attach to Head
+        attachToHead(current);
+    }
+    
+    void deleteTailNode(){
+        Node* tailNode = dummyTail->prev;
+        tailNode->prev->next = dummyTail;
+        dummyTail->prev = tailNode->prev;
+        cacheData.erase(tailNode->key);
+        delete tailNode;
+    }
+    
+    void put(int key, int value) {
+        // already exists
+        if(cacheData.find(key) != cacheData.end()){
+            cacheData[key]->value = value;
+            moveToFront(cacheData[key]);
+            return;
+        }
+        // does not exist
+        Node *newNode = new Node(key,value);
+        cacheData[key] = newNode;
+        attachToHead(newNode);
+        this->currentSize++;
+        // handle size overflow.
+        if(this->currentSize > this->size){
+            deleteTailNode();
+            this->currentSize--;
+        }
+    }
+};
+
+#DATE 12/11/2021 
+
+Topic: Leetcode 
+
+Problems:
+1. https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
+Ref: https://leetcode.com/discuss/interview-question/346621/Google-or-Phone-Screen-or-Min-swaps-to-sort-array
+class Solution 
+{
+    public:
+    //Function to find the minimum number of swaps required to sort the array. 
+	int minSwaps(vector<int>&nums)
+	{
+	    // Code here
+	    int n = nums.size();
+	    vector<pair<int,int>> pairNums(n);
+	    for(int i=0;i<n;++i){
+	        pairNums[i] = {nums[i], i};
+	    }
+	    
+	    sort(pairNums.begin(), pairNums.end());
+	    
+	    int swaps = 0;
+	    for(int i=0;i<n;++i){
+	        if(i == pairNums[i].second) continue;
+	        swaps++;
+	        swap(pairNums[i], pairNums[pairNums[i].second]);
+	        --i;
+	    }
+	    
+	    return swaps;
+	}
+};
+
+#DATE 13/11/2021 
+
+Topic: Leetcode 
+1. 78. Subsets | https://practice.geeksforgeeks.org/problems/power-set4302/1
+
+#DATE 19/11/2021
+
+Topic: System Design 
+
+1. System Design : Design a service like TinyUrl
+References:
+https://www.youtube.com/watch?v=fMZMm_0ZhK4&ab_channel=TusharRoy-CodingMadeSimple 
+https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR
+
+#DATE 20/11/2021 
+
+Topic: Leetcode
+1. 801. Minimum Swaps To Make Sequences Increasing
+2. 973. K Closest Points to Origin
+
+#DATE 21/11/2021 
+
+Topic: Leetcode
+1. 1631. Path With Minimum Effort
+2. KMP string search
+https://cppsecrets.com/users/73841099712197110107103117112116575764103109971051084699111109/C00-String-Matching-Knuth-Morris-Pratt-.php
+https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1#
+https://www.youtube.com/watch?v=BXCEFAzhxGY&ab_channel=BackToBackSWE
+
+CODE: https://leetcode.com/playground/UoDi7xvj
+void createPatternVector(string &pattern, vector<int> &prefix){
+    int n = pattern.size();
+    prefix[0] = 0;
+    int i = 0;
+    for(int j=1;j<n;++j){
+        if(pattern[i] == pattern[j]){
+            ++i;
+            prefix[j] = i;
+        }else{
+            if(i == 0){
+                prefix[j] = 0;
+            }else{
+                i = prefix[i-1];
+                --j;
+            }
+        }
+    }
+}
+
+void KMP(string match, string pattern){
+    vector<int> prefix(pattern.size());
+    createPatternVector(pattern, prefix);
+    int n = match.size();
+    int m = pattern.size();
+    int i = 0;
+    int j = 0;
+    
+    while(i < n){
+        if(match[i] == pattern[j]){
+            ++i;
+            ++j;
+        }
+        if(j == m){
+            cout<<"FOUND THE PATTERN AT: "<<i-j<<"\n";
+            j = prefix[j-1];
+        }
+        else if(i < n and match[i] != pattern[j]){
+            if(j == 0){
+                i++;
+            }else{
+                j = prefix[j-1];
+            }
+        }
+    }
+}
+
+int main() {
+    string match = "AAAABAAAAABBBAAAAB";
+    string pattern = "AAAB";
+    cout<<"Pattern matches at: \n";
+    KMP(match,pattern);
+    
+    return 0;
+}
+3. 560. Subarray Sum Equals K
+4. 2. Add Two Numbers
+5. OOPs Concepts
+SOLID PRINCIPLES:
+1. https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+2. https://www.geeksforgeeks.org/c-classes-and-objects/
+6. 547. Number of Provinces
+7. 10. Regular Expression Matching
+8. 684. Redundant Connection
+9. 685. Redundant Connection II
+10. Flyod-Warshall Algorithm 
+
+for(int k=0;k<n;++k){
+    for(int i=0;i<n;++i){
+        for(int j=0;j<n;++j){
+            if(i == j){
+                graph[i][j] = 0;
+            }else{
+                graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j]);
+            }
+        }
+    }
+}
+11. 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance
+class Solution {
+public:
+    int findTheCity(int n, vector<vector<int>>& edges, 
+                    int distanceThreshold) {
+        vector<vector<int>> graph(n, vector<int>(n, pow(10,8)+1));
+        for(auto edge: edges){
+            graph[edge[0]][edge[1]] =edge[2];
+            graph[edge[1]][edge[0]] = edge[2];
+        }
+        
+        for(int k=0;k<n;++k){
+            for(int i=0;i<n;++i){
+                for(int j=0;j<n;++j){
+                    if(i==j){
+                        graph[i][j] = 0;
+                    }else{
+                        graph[i][j] = min(graph[i][j],
+                                         graph[i][k]+graph[k][j]);
+                    }
+                }
+            }
+        }
+        
+        int smallestCount = INT_MAX;
+        int cityIndex;
+        
+        for(int i=0;i<n;++i){
+            int currentCount = 0;
+            for(int j=0;j<n;++j){
+                if(graph[i][j] <= distanceThreshold){
+                    ++currentCount;
+                }
+            }
+            if(currentCount <= smallesCount){
+                smallestCount = currentCount;
+                cityIndex = i;
+            }
+        }
+        return cityIndex;
+    }
+};
+
+#DATE 22/11/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 41. First Missing Positive
+2. 992. Subarrays with K Different Integers
+3. 862. Shortest Subarray with Sum at Least K
+4. 621. Task Scheduler
+5. 162. Find Peak Element
+
+#DATE 23/11/2021
+
+Topic: Leetcode 
+
+Problems:
+1. 1901. Find a Peak Element II
+vector<int> findPeakGrid(vector<vector<int>>& mat) {
+    int left = 0;
+    int right = mat.size()-1;
+    while(left <= right){
+        int mid = left + (right-left)/2;
+        
+        int maxCol = 0;
+        for(int j=0;j<mat[0].size();++j){
+            if(mat[mid][j] > mat[mid][maxCol]){
+                maxCol = j;
+            }
+        }
+        
+        int topValue = (mid == 0 ? -1 : mat[mid-1][maxCol]);
+        int bottomValue = (mid == mat.size()-1 ? -1 :
+                            mat[mid+1][maxCol]);
+        if(topValue > mat[mid][maxCol]){
+            right = mid - 1;
+        }else if(bottomValue > mat[mid][maxCol]){
+            left = mid + 1;
+        }else{
+            return {mid,maxCol};
+        }
+    }
+    return {};
+}
+
+2. 1235. Maximum Profit in Job Scheduling
+int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
+    vector<vector<int>> jobs;
+    int n = profit.size();
+    vector<int> dp(n);
+    
+    for(int i=0;i<n;++i){
+        jobs.push_back({startTime[i], endTime[i], profit[i]});
+    }
+    
+    sort(begin(jobs), end(jobs));
+    sort(begin(startTime), end(startTime));
+    
+    dp[n-1] = jobs[n-1][2];
+    for(int i=n-2;i>=0;--i){
+        int nextJobIndex = lower_bound(begin(startTime),end(startTime),
+                                        jobs[i][1]) - begin(startTime);
+        dp[i] = max(jobs[i][2], dp[i+1]);
+        if(nextJobIndex < n){
+            dp[i] = max(dp[i], jobs[i][2] + dp[nextJobIndex]);
+        }
+    }
+    return dp[0];
+}
+
+
+#DATE 24/11/2021
+
+Topic: Dynamic Programming 
+
+References: https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=1&ab_channel=AdityaVerma
+NOTE: Please do all 50, one by one. DO NOT SKIP ANY VIDEO.
+
+Problems:
+1. 0 - 1 Knapsack Problem
+2. Subset Sum Problem
+3. Partition Equal Subset Sum 
+4. 1498. Number of Subsequences That Satisfy the Given Sum Condition
+5. Count of subsets with sum equal to X
+int countSubsets(vector<int> arr, int sum){
+    int n = arr.size();
+    vector<vector<int>> dp(n+1,vector<int>(sum+1));
+
+    for(int j=0;j<sum+1;++j){
+        dp[0][j] = 0;
+    }
+    for(int i=0;i<n+1;++i){
+        dp[i][0] = 1;
+    }
+
+    for(int i=1;i<n+1;++i){
+        for(int j=1;j<sum+1;++j){
+            if(arr[i-1] <= j){
+                dp[i][j] = dp[i-1][j] + dp[i-1][j-arr[i-1]];
+            }else{
+                dp[i][j] = dp[i-1][j];
+            }
+        }
+    }
+    return dp[n][sum];
+}
+//NOTE: You will need to add the number of subsets at each point where the arr[i-1] is less than j.
+
+6. Minimum sum partition 
+int minDifference(int arr[], int n)  { 
+    // Your code goes here
+    int totalSum = accumulate(arr,arr+n,0);
+    int halfSum = totalSum/2;
+    vector<vector<bool>> dp(n+1,vector<bool>(totalSum+1));
+    
+    for(int i=0;i<n+1;++i){
+        for(int j=0;j<totalSum+1;++j){
+            if(i == 0){
+                dp[i][j] = false;
+            }
+            if(j == 0){
+                dp[i][j] = true;
+            }
+        }
+    }
+    
+    for(int i=1;i<n+1;++i){
+        for(int j=1;j<totalSum+1;++j){
+            if(arr[i-1] <= j){
+                dp[i][j] = dp[i-1][j] || dp[i-1][j-arr[i-1]];
+            }else{
+                dp[i][j] = dp[i-1][j];
+            }
+        }
+    }
+    
+    int sum1 = INT_MAX;
+    for(int j=1;j<totalSum+1;++j){
+        if(dp[n][j] == true){
+            if(abs(halfSum-j) < abs(halfSum-sum1)){
+                sum1 = j;
+            }
+        }
+    }
+    
+    int sum2 = totalSum - sum1;
+    return abs(sum1-sum2);
+} 
+
+7. https://leetcode.com/discuss/interview-question/1271034/count-no-of-subsets-with-given-difference-dp
+8. 494. Target Sum
+
+#DATE 25/11/2021
+
+Topic: Dynamic Programming
+
+Problems:
+1. Unbounded Knapsack
+2. Rod Cutting 
+3. 518. Coin Change 2
+4. 322. Coin Change
+5. 343. Integer Break
+6. 1143. Longest Common Subsequence
+7. Longest Common Substring 
+8.  Printing Longest common subsequence
+string printLCS(string s1, string s2){
+    int n = s1.size();
+    int m = s2.size();
+    vector<vector<int>> dp(n+1, vector<int>(m+1));
+    LCS(s1,s2,dp);
+
+    // printing the LCS 
+    string result = "";
+    int i = n;
+    int j = m;
+
+    while(i > 0 and j > 0){
+        if(s1[i-1] == s2[j-1]){
+            result = s1[i-1] + result;
+            --i;
+            --j;
+        }else{
+            if(dp[i-1][j] > dp[i][j-1]){
+                --i;
+            }else{
+                --j;
+            }
+        }
+    }
+    return result;
+}
+9. Shortest Common Supersequence 
+10. Minimum number of deletions and insertions
+11. 121. Best Time to Buy and Sell Stock
+12. 139. Word Break
+
+#DATE 26/11/2021 
+
+Topic: Dynamic Programming 
+
+Problems:
+1. Find the smallest and second smallest element in an array 
+2. 14. Longest Common Prefix
+3. 300. Longest Increasing Subsequence
+4. Find the string in grid 
+5. 79. Word Search
+6. 37. Sudoku Solver
+7. 516. Longest Palindromic Subsequence
+8. 1326. Minimum Number of Taps to Open to Water a Garden
+9. Pairs which are Divisible by 4 
+
+TODO:
+1. Dynamic Programming - Go through Aditya Verma's 50 vids again. 
+2. OOPs Concepts
+3. SQL basics
+
+#DATE 28/11/2021
+
+Topic: Java / Spring / SpringBoot Tutorials 
+
+References:
+1. Spring Tutorial: https://www.youtube.com/watch?v=If1Lw4pLLEo&ab_channel=Telusko
+2. Java Tutorial: https://www.youtube.com/watch?v=eIrMbAQSU34&ab_channel=ProgrammingwithMosh
+
+
+#DATE 29/11/2021 
+
+Topic: Java / OOPs concepts 
+
+References:
+1. OOPs fundamentals: https://www.youtube.com/watch?v=SiBw7os-_zI&ab_channel=freeCodeCamp.org
+
+
+#DATE 30/11/2021
+
+Topic: Java / OOPs concepts 
+
+Explanation:
+https://www.youtube.com/watch?v=pTB30aXS77U&ab_channel=ArjanCodes
+
+Summary:
+1. Single Responsibility
+Make things (classes, functions, etc.) responsible for fulfilling one type of role.
+e.g. Refactor code responsibilities into separate classes.
+
+2. Open/Closed
+Be able to add new functionality to existing code easily without modifying existing code.
+e.g. Use abstract classes. These can define what subclasses will require and strengthen Principle 1. by separating code duties.
+
+3. Liskov Substitution
+When a class inherits from another class, the program shouldn't break and you shouldn't need to hack anything to use the subclass.
+e.g. Define constructor arguments to keep inheritance flexible.
+
+4. Interface Segregation
+Make interfaces (parent abstract classes) more specific, rather than generic.
+e.g. Create more interfaces (classes) if needed and/or provide objects to constructors.
+
+5. Dependency Inversion
+Make classes depend on abstract classes rather than non-abstract classes.
+e.g. Make classes inherit from abstract classes.
+
+To initialise SpringBoot:
+https://start.spring.io/
+
+#DATE 1/12/2021
+
+Topic: Java / Spring / SpringBoot 
+
+References:
+1. Spring Boot: https://www.youtube.com/watch?v=9SGDpanrc8U&ab_channel=Amigoscode
+
+Topic: System Design 
+Reference:
+1. https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&ab_channel=GauravSen
+
+
+#DATE 3/12/2021 
+
+Topic: Dynamic Programming 
+
+Problems:
+1. https://practice.geeksforgeeks.org/problems/minimum-deletitions1648/1
+2. Print shortest common Supersequence
+
+
+#DATE 4/12/2021 
+
+Topic: Dynamic Programming 
+
+Problems:
+1. Longest Repeating Subsequence 
+2. Sequence Pattern Matching
+
+TODO:
+1. https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&ab_channel=GauravSen
+2. https://www.youtube.com/watch?v=q0KGYwNbf-0&ab_channel=Cl%C3%A9mentMihailescu
+3. https://www.youtube.com/watch?v=CtmBGH8MkX4&ab_channel=GauravSen
+4. https://www.youtube.com/watch?v=vvhC64hQZMk&ab_channel=GauravSen
+5. https://www.youtube.com/watch?v=LghAWi4H974&ab_channel=KeepOnCoding
+6. https://www.youtube.com/watch?v=XxB1BCuvu9A&ab_channel=EngineeringwithUtsav
+7. https://m.signalvnoise.com/the-majestic-monolith/
+
+Design Patterns:
+1. https://www.youtube.com/watch?v=NU_1StN5Tkk&ab_channel=ProgrammingwithMosh
+
+#DATE 2/12/2021
+
+Topic: System Design 
+
+Reference:
+https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&ab_channel=GauravSen
+
+
+#DATE 6/12/2021 
+
+Topic: System Design 
+
+NOTE:
+Different types of Caching:
+Write-through: data is written in cache & DB; I/O completion is confirmed only when data is written in both places
+Write-around: data is written in DB only; I/O completion is confirmed when data is written in DB
+Write-back: data is written in cache first; I/O completion is confirmed when data is written in cache; data is written to DB asynchronously (background job) and does not block the request from being processed
+
+TODO:
+1. Job Scheduling Problem
+2. MST (Minimum Spanning Tree) - https://www.geeksforgeeks.org/minimum-cost-connect-cities/ [CHECK BEORE INTERVIEW]
+3. https://practice.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/
+4. https://leetcode.com/problems/minimum-window-substring/solution/ (NEED TO UNDERSTAND THE CODE)
+5. https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+6. Palindromic patitioning
+7. 132. Palindrome Partitioning II (NEED O(N^2) SOLUTION FOR THIS)
+8. 131. Palindrome Partitioning (DIFFERENT APPROACH)
+9. https://leetcode.com/discuss/interview-question/731911/please-share-dijkstras-algorithm-questions
+10. https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+11. https://www.geeksforgeeks.org/snake-ladder-problem-2/
+12. Find a duplicate and a missing number
+13. https://leetcode.com/problems/find-a-peak-element-ii/
+14. Scrambled Strings.
+
+TOTAL Questions solved:
+1. Leetcode 
+Total - 241 
+Easy - 89
+Medium - 122
+Hard - 30
+
+2. GeeksforGeeks
+Total - 255
+
+Time for prep - 10 Months.

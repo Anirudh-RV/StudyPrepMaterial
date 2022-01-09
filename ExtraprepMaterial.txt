@@ -1,0 +1,62 @@
+To Learn:
+
+1. Python
+Reference: 
+i. Course: https://www.youtube.com/watch?v=_uQrJ0TkZlc&ab_channel=ProgrammingwithMosh
+ii. Data Types: https://www.datacamp.com/community/tutorials/data-structures-python#adt
+iii. Access Modifiers: https://www.geeksforgeeks.org/access-modifiers-in-python-public-private-and-protected/
+
+2. Pep8 standards 
+Reference: 
+i. Official Document: https://www.python.org/dev/peps/pep-0008/
+ii. Autopep8: https://stackoverflow.com/questions/14328406/tool-to-convert-python-code-to-be-pep8-compliant {% endcomment %} {% endcomment %} {% endcomment %} {% endcomment %}
+
+3. Django 
+Reference: 
+i. Tutorial: https://www.youtube.com/watch?v=F5mRW0jo-U4&ab_channel=freeCodeCamp.org
+ii. Setting up the virtual environment for Python: https://www.codingforentrepreneurs.com/blog/install-django-on-mac-or-linux
+Steps:
+    1. Ensure python shows python3 in your system
+    2. python -m pip install pip --upgrade
+    3. python -m pip install pipenv
+    4. Verify: pipenv
+    5. Create a new directory for the virtual environment
+    6. mkdir newenv 
+    7. Go into the new directory: cd newenv
+    8. Set up the virtual environment: pipenv install --python 3.<version_number>
+    9. To activate: pipenv shell
+    10. To deactivate: deactivate
+
+4. Git - git clone, fetch, pull, rebase, branch operations
+References:
+i. Basic: https://www.youtube.com/watch?v=RGOj5yH7evk
+ii. Intermediate: https://www.youtube.com/watch?v=Uszj_k0DGsg
+
+5. Logging 
+References:
+i. https://www.youtube.com/watch?v=-ARI4Cz-awo&ab_channel=CoreySchafer
+ii. https://www.youtube.com/watch?v=p0A4CV4MWd0&ab_channel=PythonEngineer
+
+6. Docker / Docker Compose
+
+7. What is ORM?
+
+8. Basics of Design Patterns
+References:
+i. https://www.youtube.com/watch?v=NU_1StN5Tkk&ab_channel=ProgrammingwithMosh
+
+To Learn in AWS:
+1. Lambda: https://www.youtube.com/watch?v=EBSdyoO3goc&ab_channel=AmazonWebServices
+2. CloudWatch: https://www.youtube.com/watch?v=k7wuIrHU4UY&ab_channel=BeABetterDev
+3. API Gateway: https://www.youtube.com/watch?v=qnVfWG8N7Fw&ab_channel=edureka%21
+4. SQS: https://www.youtube.com/watch?v=vLNDaZuA3Dc&ab_channel=edureka%21
+5. ElasticCache: https://www.youtube.com/watch?v=WAHsVmiw5dI&ab_channel=JagadeeshReddy
+6. RDS
+Reference:
+1. https://www.youtube.com/watch?v=eMzCI7S1P9M&ab_channel=AmazonWebServices
+2. https://www.youtube.com/watch?v=7bfOllAyxlg&ab_channel=Simplilearn
+7. RedShift: https://www.youtube.com/watch?v=7bfOllAyxlg&ab_channel=Simplilearn
+8. SecretManager: https://www.youtube.com/watch?v=Y3Gn_iP3FlE&ab_channel=AWSOnlineTechTalks
+9. EC2: https://www.youtube.com/watch?v=8TlukLu11Yo&ab_channel=Simplilearn
+   EBS: https://www.youtube.com/watch?v=DS1nF1WBGKk&ab_channel=Simplilearn
+   EKS: 

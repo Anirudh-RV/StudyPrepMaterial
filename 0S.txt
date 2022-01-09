@@ -1,0 +1,242 @@
+OPERATING SYSTEM:
+
+Knowledge Gate: 123 Videos, watch them
+https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD
+
+Gate Smashers 90 Video playlist (Probably better than Knowledge Gate):
+https://www.youtube.com/watch?v=iMD1Z3f9ioI&list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&index=26&ab_channel=GateSmashersGateSmashersVerified
+
+23/05/2021 - 21/123
+
+GFG OS:
+https://www.geeksforgeeks.org/operating-systems/
+
+TODO:
+Do synchronisation
+Semaphore
+Mutex
+Multi threading Concepts
+
+Semaphores:
+
+1. Entry Code: P(), Down(), Wait()
+2. Exit Code:  V(), Up(),   Signal(), Post(), Release()
+3. Given S = 0, it will help maintain Mutual Exclusion
+
+Psuedo Code:
+
+Entry Code;
+Critical Section;
+Exit Code;
+
+Counting Semaphore Code:
+
+Entry Code:
+
+Down(Semaphore S){
+  S.value = S.value - 1;
+  if(S<0){
+   sleep(); // Put the Process (PCB) in Suspend List.
+  }else{
+   return;
+  }
+}
+
+Exit Code:
+
+Up(Semaphore S){
+  S.value = S.value + 1;
+  if(S<=0){
+  WakeUp(); Select a process from Suspend List.
+  }
+}
+
+Binary Semaphore Code:
+
+Entry Code:
+Down(Semaphore S){
+  if(S.value == 1){
+    S.value = 0;
+  }else{
+    Sleep();
+  }
+}
+
+Exit Code:
+
+Up(Semaphore S){
+  if(Suspend List is Empty){
+    S.value = 1;
+  }else{
+    S.value = 1;
+    WakeUp();
+  }
+}
+
+IMP: Semaphore vs Mutex: https://www.youtube.com/watch?v=8wcuLCvMmF8&ab_channel=ShriramVasudevanShriramVasudevan
+- Semaphore is a Signal
+- Mutex is a Lock (Mutual Exclusion Object) | Allows many programs to access a resource, but not at the same time.
+
+Use Cases:
+- When many resources are available, use Semaphore.
+- When there is only one shared resource in place, Mutex is preffered.
+
+IMP: Write and Understand the code for solving Producer Consumer Problem
+
+
+Variables in Play:
+
+Counting Semaphore: Empty
+Counting Semaphore: Full
+Binary Semaphore: S
+Integer: In
+Integer: Out
+Data Structure: Buffer
+
+Code for Producer:
+
+// As we are producing
+Down(Empty)
+Down(S)
+// Start of Critical Section
+Buffer[In] = temp;
+In = (In+1)%n;
+// End of Critical Section
+Up(S)
+// As we have produced
+Up(Full)
+
+
+Code for Consumer:
+
+// As we are about to Consume
+Down(Full)
+Down(S)
+// Start of Critical Section
+Item C = Buffer[Out];
+Out = (Out+1)%n;
+// End of Critical Section
+Up(S)
+// As we have consumed
+Up(Empty)
+
+
+Reader-Writer Problem:
+We will be using 2 sections that will need to be guarded
+- int rc
+- Section DB
+We will be using the following Semaphores to do the same
+- Semaphore read
+- Semaphore db
+We will also be needed a Reader and Writer Function
+
+int rc = 0;
+Semaphore read = 1;
+Semaphore db = 1;
+
+void Reader(){
+ while(true){
+  // first guard the read counter
+  down(read);
+  rc = rc + 1;
+  if(rc>0){
+   down(db);
+  }
+  up(read);
+  // Critical section
+  [DB]
+
+  // if we want to come out
+  down(read);
+  rc = rc - 1;
+  if(rc == 0){
+   up(db);
+  }
+  up(read);
+ }
+}
+
+Void Writer(){
+ while(True){
+  down(db);
+  // Critical Section
+  [DB]
+  up(db);
+ }
+}
+
+Dining-Philosopher's Problem:
+
+Phase 1:
+The issue - N Philosophers in total:
+
+void philosopher(){
+ while(true){
+  think();
+  take_fork(i);
+  take_fort((i+1)%N);
+  [EAT];
+  put_fork(i);
+  put_fork((i+1)%N);
+ }
+}
+
+Phase 2:
+This will cause a race condition.
+Guard this using a Semaphore for each fork.
+
+vector<Semaphore> S(N,1);
+
+void philosopher(){
+ while(true){
+  think();
+  down(take_fork(S[i]));
+  down(take_fork(S[(i+1)%N]));
+  [EAT];
+  up(put_fork(S[i]));
+  up(put_fork(S[(i+1)%N]));
+ }
+}
+
+Phase 3:
+This will avoid a race condition but will cause a situation of a Deadlock
+To avoid Deadlock, make any one Philosopher pick up the fork in the opposite direction.
+
+void philosopher(){
+ while(true){
+  Thinking();
+  // To avoid Deadlock.
+  if(i == N-1){
+   down(take_fork(S[(i+1)%N]));
+   down(take_fork(S[i]));
+  }else{
+   down(take_fork(S[i]));
+   down(take_fork(S[(i+1)%N]));
+  }
+  [EAT];
+  up(put_fork(S[i]));
+  up(put_fork(S[(i+1)%N]));
+ }
+}
+
+Memory management:
+
+First Fit - Allocate the first hole which is big enough
+Next Fit - Same as First Fit, assign the next hole to the hole assigned previously. Search begins from the last allocation.
+Best Fit - Allocate a hole closest to the process size. Search entire list. Leads to minimum internal fragmentation.
+Ends up creating very small holes which might not be able to accommodate any more processes.
+Worst Fit - Allocate the largest hole. Search entire list.
+
+Learn about Schedulers (DONE)
+- Long Term - From secondary storage to ready state
+- Medium Term - From waiting or ready state to secondary storage queue and back
+- Short Term - From ready to running
+
+
+*Process*
+
+Components of a process are:
+1. Stack - For variables and return addresses
+2. Heap - For Dynamic memory Allocation
+3. Data - Has global and static variables
+4. Text - Has compiled code
